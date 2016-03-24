@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<AADC-Maneuver-List description="sample">
+	<AADC-Sector id="0">
+		<AADC-Maneuver id="0" action="left" />
+		<AADC-Maneuver id="1" action="straight" />
+		<AADC-Maneuver id="2" action="right" />
+		<AADC-Maneuver id="3" action="straight" />
+		<AADC-Maneuver id="4" action="straight" />
+		<AADC-Maneuver id="5" action="left" />
+	</AADC-Sector>
+	<AADC-Sector id="1">
+		<AADC-Maneuver id="6" action="straight" />
+		<AADC-Maneuver id="7" action="straight" />
+		<AADC-Maneuver id="8" action="straight" />
+		<AADC-Maneuver id="9" action="straight" />
+		<AADC-Maneuver id="10" action="straight" />
+	</AADC-Sector>
+	<AADC-Sector id="2">
+		<AADC-Maneuver id="11" action="straight" />
+		<AADC-Maneuver id="12" action="cross_parking" />
+	</AADC-Sector>
+	<AADC-Sector id="3">
+		<AADC-Maneuver id="13" action="pull_out_left" />
+		<AADC-Maneuver id="14" action="straight" />
+		<AADC-Maneuver id="15" action="parallel_parking" />
+		<!--<AADC-Maneuver id="..." action="..." />-->
+	</AADC-Sector>
+</AADC-Maneuver-List>

@@ -1,0 +1,1678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BuildServerSettings">
+    <option name="LOGIN" value="mwinkler" />
+    <option name="SERVER_URL" value="http://smart-driving.htwk-leipzig.de:8111" />
+    <option name="PASSWORD" value="dff9dfc7dfcbdfd8dfdedfcedfd8dfc3dfdcdfc3dfc4dfcddf9b" />
+    <option name="REMEMBER_ME" value="true" />
+    <option name="USE_IDEA_PROXY_SETTINGS" value="true" />
+    <option name="INSPECTIONS_BUILD_TYPE_IDS" />
+    <option name="DUPLICATES_BUILD_TYPE_IDS" />
+    <option name="COVERAGE_SETTINGS" />
+    <option name="TEST_STATUS_ENABLED" value="true" />
+    <option name="TEST_STATUS_SHOW_SUCCESSFUL" value="false" />
+    <option name="ARTIFACTS_BUILD_TYPE_IDS" />
+    <option name="PERFORM_COMMIT_IF_SUCCESSFUL" value="true" />
+    <option name="PERFORM_COMMIT_IF_NO_NEW_FAILED_TESTS" value="false" />
+    <option name="REQUEST_CONFIRMATON" value="false" />
+    <option name="PRE_TESTED_COMMIT" value="true" />
+    <option name="PROJECT_STATUS_DIALOG_SPLITTER_DIVIDER_LOCATION" value="500" />
+    <option name="CHANGES_STATUS_DIALOG_SPLITTER_DIVIDER_LOCATION" value="500" />
+    <option name="FILTER_BY_STATUS" value="false" />
+    <option name="FILTER_MARKED_AS_FIXED" value="false" />
+    <option name="SHOW_CLOSE_PROMPT" value="true" />
+    <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="1" />
+    <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
+    <treeState key="changes">
+      <expandedPath>
+        <pathElement>
+          <option name="myNodeId" value="3" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.ChangesGroupDescriptor" />
+        </pathElement>
+      </expandedPath>
+      <selectedPath>
+        <pathElement>
+          <option name="myNodeId" value="3" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.ChangesGroupDescriptor" />
+        </pathElement>
+        <pathElement>
+          <option name="myNodeId" value="133" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.VcsModificationDescriptor" />
+        </pathElement>
+      </selectedPath>
+    </treeState>
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" assignedExecutableTargets="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="HTWK_2016" targetName="htwk_emergency_braking" />
+      <config projectName="HTWK_2016" targetName="tests" />
+      <config projectName="HTWK_2016" targetName="htwk_proto_turn" />
+      <config projectName="HTWK_2016" targetName="htwk_drive_decision" />
+      <config projectName="HTWK_2016" targetName="htwk_world_filter_out" />
+      <config projectName="HTWK_2016" targetName="htwk_idle" />
+      <config projectName="HTWK_2016" targetName="htwk_vision" />
+      <config projectName="HTWK_2016" targetName="htwk_depth_detection" />
+      <config projectName="HTWK_2016" targetName="htwk_lane_calc" />
+      <config projectName="HTWK_2016" targetName="htwk_ysd_comparer" />
+      <config projectName="HTWK_2016" targetName="htwk_function_driver" />
+      <config projectName="HTWK_2016" targetName="htwk_calc_movement" />
+      <config projectName="HTWK_2016" targetName="demo_binding_server" />
+      <config projectName="HTWK_2016" targetName="htwk_median_values_filter" />
+      <config projectName="HTWK_2016" targetName="htwk_obstacle_grid" />
+      <config projectName="HTWK_2016" targetName="htwk_imu_outlier_remover" />
+      <config projectName="HTWK_2016" targetName="htwk_cross_parking" />
+      <config projectName="HTWK_2016" targetName="htwk_world_filter" />
+      <config projectName="HTWK_2016" targetName="htwk_world_fusion_reactor" />
+      <config projectName="HTWK_2016" targetName="htwk_yawtosteer" />
+      <config projectName="HTWK_2016" targetName="htwk_simple_shape_filter" />
+      <config projectName="HTWK_2016" targetName="htwk_marker_evaluator" />
+      <config projectName="HTWK_2016" targetName="lmfit" />
+      <config projectName="HTWK_2016" targetName="htwk_obstacle_detection" />
+      <config projectName="HTWK_2016" targetName="ipm_border" />
+      <config projectName="HTWK_2016" targetName="htwk_ultra_detection" />
+      <config projectName="HTWK_2016" targetName="lane_detection_data" />
+      <config projectName="HTWK_2016" targetName="htwk_network_reciver" />
+      <config projectName="HTWK_2016" targetName="htwk_ultra_median" />
+      <config projectName="HTWK_2016" targetName="htwk_distance_sensor_merger" />
+      <config projectName="HTWK_2016" targetName="htwk_logger" />
+      <config projectName="HTWK_2016" targetName="htwk_turn" />
+      <config projectName="HTWK_2016" targetName="htwk_client_server" />
+      <config projectName="HTWK_2016" targetName="htwk_world_service" />
+      <config projectName="HTWK_2016" targetName="demo_dataexchange_raw" />
+      <config projectName="HTWK_2016" targetName="htwk_carconfig" />
+      <config projectName="HTWK_2016" targetName="htwk_parallel_parking" />
+      <config projectName="HTWK_2016" targetName="htwk_marker_analysis" />
+      <config projectName="HTWK_2016" targetName="htwk_crossing" />
+      <config projectName="HTWK_2016" targetName="run_tests" />
+      <config projectName="HTWK_2016" targetName="demo_binding_client" />
+      <config projectName="HTWK_2016" targetName="htwk_utils" />
+      <config projectName="HTWK_2016" targetName="htwk_vdar" />
+      <config projectName="HTWK_2016" targetName="htwk_world_service_h" />
+      <config projectName="HTWK_2016" targetName="htwk_temporal_image" />
+      <config projectName="HTWK_2016" targetName="htwk_state_controller" />
+      <config projectName="HTWK_2016" targetName="htwk_newtork_reciver" />
+      <config projectName="HTWK_2016" targetName="htwk_noise_remover" />
+      <config projectName="HTWK_2016" targetName="htwk_structs" />
+      <config projectName="HTWK_2016" targetName="FILTER" />
+      <config projectName="HTWK_2016" targetName="htwk_region_of_interest" />
+      <config projectName="HTWK_2016" targetName="htwk_lane_driver" />
+      <config projectName="HTWK_2016" targetName="htwk_world_filter_in" />
+      <config projectName="HTWK_2016" targetName="htwk_base_decision_module" />
+      <config projectName="HTWK_2016" targetName="htwk_imu_merger" />
+      <config projectName="HTWK_2016" targetName="htwk_pull_out" />
+      <config projectName="HTWK_2016" targetName="htwk_messagesbus_netio" />
+      <config projectName="HTWK_2016" targetName="htwk_signal_restrictor" />
+      <config projectName="HTWK_2016" targetName="htwk_marker_detection" />
+      <config projectName="HTWK_2016" targetName="demo_client" />
+      <config projectName="HTWK_2016" targetName="STATIC" />
+      <config projectName="HTWK_2016" targetName="htwk_image_fusion_reactor" />
+      <config projectName="HTWK_2016" targetName="htwk_state_controller_new" />
+      <config projectName="HTWK_2016" targetName="htwk_lane_detection" />
+      <config projectName="HTWK_2016" targetName="data_exchange_raw_filter" />
+      <config projectName="HTWK_2016" targetName="htwk_wait_parking" />
+      <config projectName="HTWK_2016" targetName="htwk_world_filter_example" />
+      <config projectName="HTWK_2016" targetName="htwk_ipm" />
+      <config projectName="HTWK_2016" targetName="htwk_imu_merger_test" />
+      <config projectName="HTWK_2016" targetName="htwk_collision_prevention" />
+      <config projectName="HTWK_2016" targetName="demo_server" />
+      <config projectName="HTWK_2016" targetName="htwk_median_lib" />
+      <config projectName="HTWK_2016" targetName="htwk_vision_lib" />
+      <config projectName="HTWK_2016" targetName="htwk_movement_visualizer" />
+      <config projectName="HTWK_2016" targetName="htwk_obstacle_passing" />
+      <config projectName="HTWK_2016" targetName="htwk_drive_decision_test" />
+      <config projectName="HTWK_2016" targetName="htwk_lanes" />
+      <config projectName="HTWK_2016" targetName="htwk_state_controller_test" />
+      <config projectName="HTWK_2016" targetName="htwk_grayscale" />
+      <config projectName="HTWK_2016" targetName="htwk_movement_analyzer" />
+      <config projectName="HTWK_2016" targetName="htwk_trigger" />
+      <config projectName="HTWK_2016" targetName="line_end" />
+      <config projectName="HTWK_2016" targetName="htwk_park_assist" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true" GENERATION_PASS_SYSTEM_ENVIRONMENT="false" BUILD_OUTPUT_DIR="build">
+    <ADDITIONAL_GENERATION_ENVIRONMENT>
+      <envs>
+        <env name="OpenCV_DIR" value="/opt/opencv/3.0.0/build" />
+        <env name="ADTF_DIR" value="/opt/adtf" />
+        <env name="OSG_DIR" value="/opt/osg/3.2.0/" />
+        <env name="ADTF_DISPLAY_TOOLBOX_DIR" value="/opt/adtf/addons/adtf-display-toolbox/" />
+        <env name="aruco_DIR" value="/opt/aruco/1.3.0/lib/cmake" />
+      </envs>
+    </ADDITIONAL_GENERATION_ENVIRONMENT>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b669b4b6-43dc-49d8-ac67-501d584fe948" name="Default" comment="Kür Distance - Speed checker">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../deploy.py" afterPath="$PROJECT_DIR$/../../deploy.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.py" afterPath="$PROJECT_DIR$/build.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/htwk_yaw_to_steer/YawToSteer.cpp" afterPath="$PROJECT_DIR$/src/htwk_yaw_to_steer/YawToSteer.cpp" />
+    </list>
+    <list id="a0cc02b0-5bac-4fff-a9ab-a7fe8f7befea" name="New changelist" comment="New changelist" />
+    <ignored path="smart-driving.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="smart-driving" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SDComparer.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/htwk_ysd_comparer/SDComparer.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="105" column="39" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YawToSteer.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/htwk_yaw_to_steer/YawToSteer.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.6225681">
+              <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YawToSteer.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/htwk_yaw_to_steer/YawToSteer.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="mwinkler &lt;winkler-max-ja@web.de&gt;" />
+        <option value="mwinkler &lt;pbachmann@stud.htwk-leipzig.de&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/htwk_world_filter/WorldFilterOut.cpp" />
+        <option value="$PROJECT_DIR$/src/htwk_marker_analysis/cMarkerEvaluatorFilter.h" />
+        <option value="$PROJECT_DIR$/src/htwk_marker_detection/cMarkerDetectFilter.cpp" />
+        <option value="$PROJECT_DIR$/src/htwk_marker_analysis/cMarkerEvaluatorFilter.cpp" />
+        <option value="$PROJECT_DIR$/src/HTWK_Client_Server/cDemoServerFilter.h" />
+        <option value="$PROJECT_DIR$/src/HTWK_Client_Server/cDemoServerFilter.cpp" />
+        <option value="$PROJECT_DIR$/src/HTWK_Client_Server/cDemoClientFilter.h" />
+        <option value="$PROJECT_DIR$/src/HTWK_Client_Server/cDemoClientFilter.cpp" />
+        <option value="$PROJECT_DIR$/src/HTWK_Client_Server/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/demo_dynamic_binding/demo_client/stdafx.h" />
+        <option value="$PROJECT_DIR$/src/demo_dynamic_binding/demo_server/stdafx.h" />
+        <option value="$PROJECT_DIR$/src/demo_dynamic_binding/demo_server/demo_server_filter.h" />
+        <option value="$PROJECT_DIR$/src/demo_dynamic_binding/demo_client/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/demo_dynamic_binding/demo_server/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/demo_dynamic_binding/demo_server/demo_server_filter.cpp" />
+        <option value="$PROJECT_DIR$/src/demo_dynamic_binding/demo_client/demo_client_filter.h" />
+        <option value="$PROJECT_DIR$/src/demo_dynamic_binding/demo_client/demo_client_filter.cpp" />
+        <option value="$PROJECT_DIR$/src/htwk_messagebus_netio/demonetiofilter.cpp" />
+        <option value="$PROJECT_DIR$/src/htwk_network_reciver/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/htwk_network_reciver/raw_filter.h" />
+        <option value="$PROJECT_DIR$/src/htwk_networking/receive_filter/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/htwk_networking/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/htwk_park_assist/PullOut.cpp" />
+        <option value="$PROJECT_DIR$/src/htwk_json_carconfig/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/htwk_json_carconfig/car19config.JSON" />
+        <option value="$PROJECT_DIR$/src/htwk_json_carconfig/car19config.xml" />
+        <option value="$PROJECT_DIR$/src/htwk_json_carconfig/car20config.xml" />
+        <option value="$PROJECT_DIR$/src/htwk_json_carconfig/Carconfigreader.h" />
+        <option value="$PROJECT_DIR$/src/htwk_json_carconfig/Carconfigconstants.h" />
+        <option value="$PROJECT_DIR$/src/htwk_json_carconfig/Carconfigreader.cpp" />
+        <option value="$PROJECT_DIR$/src/htwk_carconfig/car19config.xml" />
+        <option value="$PROJECT_DIR$/src/htwk_carconfig/Carconfigreader.h" />
+        <option value="$PROJECT_DIR$/src/htwk_carconfig/Carconfigreader.cpp" />
+        <option value="$PROJECT_DIR$/src/htwk_carconfig/CarconfigreaderFilter.h" />
+        <option value="$PROJECT_DIR$/src/htwk_carconfig/CarconfigreaderFilter.cpp" />
+        <option value="$PROJECT_DIR$/src/htwk_world_service_h/WorldService.h" />
+        <option value="$PROJECT_DIR$/src/htwk_world_service/WorldService.cpp" />
+        <option value="$PROJECT_DIR$/src/htwk_collision_prevention/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/htwk_carconfig/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/htwk_collision_prevention/CollisionPrevention.h" />
+        <option value="$PROJECT_DIR$/src/htwk_carconfig/CarConfigReader.h" />
+        <option value="$PROJECT_DIR$/src/htwk_carconfig/CarConfigReader.cpp" />
+        <option value="$PROJECT_DIR$/src/htwk_collision_prevention/CollisionPrevention.cpp" />
+        <option value="$PROJECT_DIR$/src/htwk_yaw_to_steer/YawToSteer.h" />
+        <option value="$PROJECT_DIR$/src/htwk_yaw_to_steer/SDComparer.cpp" />
+        <option value="$PROJECT_DIR$/src/htwk_ysd_comparer/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/htwk_ysd_comparer/SDComparer.h" />
+        <option value="$PROJECT_DIR$/build.py" />
+        <option value="$PROJECT_DIR$/src/htwk_ysd_comparer/SDComparer.cpp" />
+        <option value="$PROJECT_DIR$/src/htwk_yaw_to_steer/YawToSteer.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="OCFindUsagesOptions" text="false" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1206" />
+    <option name="height" value="937" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-driving" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-driving" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-driving" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-driving" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-driving" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-driving" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-driving" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htwk_ysd_comparer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-driving" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-driving" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htwk_yaw_to_steer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-driving" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-driving" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htwk_world_service_h" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-driving" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-driving" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htwk_median_values_filter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-driving" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-driving" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htwk_imu_merger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aadcDemo/CMakeLists.txt" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="68" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="80" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="83" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="890" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="68" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="80" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="83" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="890" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/htwk_marker_analysis" />
+      <recent name="$PROJECT_DIR$/src/htwk_structs" />
+      <recent name="$PROJECT_DIR$/src/htwk_utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/htwk_ysd_comparer" />
+      <recent name="$PROJECT_DIR$/src/htwk_json_carconfig/jsonlib" />
+      <recent name="$PROJECT_DIR$/src/htwk_json_carconfig" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/HTWK_Client_Server" />
+    </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/htwk_movement_visualizer/MovementVisualizer.cpp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/htwk_movement_visualizer/MovementVisualizer.h</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
+  <component name="RunManager" selected="Bash.Transfer to Car 19">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_emergency_braking" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_emergency_braking" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_proto_turn" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_proto_turn" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_marker_detection" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_marker_detection" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_lane_driver" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_lane_driver" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_drive_decision" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_drive_decision" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_state_controller" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_state_controller" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_vdar" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_vdar" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_drive_decision_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_drive_decision_test" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_marker_analysis" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_marker_analysis" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_ultra_median" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_ultra_median" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_world_filter_example" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_world_filter_example" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_trigger" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_trigger" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_world_service_h" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_world_service_h" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_base_decision_module" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_base_decision_module" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_world_filter_in" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_world_filter_in" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_world_filter_out" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_world_filter_out" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_distance_sensor_merger" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_distance_sensor_merger" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_wait_parking" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_wait_parking" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_state_controller_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_state_controller_test" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_turn" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_turn" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_idle" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_idle" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_imu_merger" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_imu_merger" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_imu_merger_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_imu_merger_test" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_pull_out" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_pull_out" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_collision_prevention" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_collision_prevention" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_depth_detection" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_depth_detection" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_image_fusion_reactor" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_image_fusion_reactor" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_ultra_detection" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_ultra_detection" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_client_server" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_client_server" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="demo_binding_client" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="demo_binding_client" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="demo_binding_server" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="demo_binding_server" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="demo_server" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="demo_server" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="demo_client" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="demo_client" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_crossing" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_crossing" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_messagesbus_netio" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_messagesbus_netio" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_marker_evaluator" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_marker_evaluator" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_obstacle_passing" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_obstacle_passing" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_network_reciver" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_network_reciver" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="demo_dataexchange_raw" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="demo_dataexchange_raw" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HTWK_2016" RUN_TARGET_NAME="demo_dataexchange_raw">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="data_exchange_raw_filter" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="data_exchange_raw_filter" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_newtork_reciver" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_newtork_reciver" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="FILTER" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="FILTER" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HTWK_2016" RUN_TARGET_NAME="FILTER">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_carconfig" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_carconfig" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="STATIC" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="STATIC" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_state_controller_new" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_state_controller_new" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_yawtosteer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_yawtosteer" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_imu_outlier_remover" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_imu_outlier_remover" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build" type="BashConfigurationType" factoryName="Bash" singleton="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/build.py" />
+      <option name="PARAMETERS" value="" />
+      <module name="smart-driving" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Transfer to Car 19" type="BashConfigurationType" factoryName="Bash" singleton="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../transfer-to-car.sh" />
+      <option name="PARAMETERS" value="192.168.1.119" />
+      <module name="smart-driving" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Transfer to Car 19 WLAN" type="BashConfigurationType" factoryName="Bash" singleton="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../transfer-to-car.sh" />
+      <option name="PARAMETERS" value="192.168.1.19" />
+      <module name="smart-driving" />
+      <envs />
+      <method>
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="Build" run_configuration_type="BashConfigurationType" />
+      </method>
+    </configuration>
+    <configuration default="false" name="Transfer to Car 20" type="BashConfigurationType" factoryName="Bash" singleton="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../transfer-to-car.sh" />
+      <option name="PARAMETERS" value="192.168.1.120" />
+      <module name="smart-driving" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Transfer to Car 20 WLAN" type="BashConfigurationType" factoryName="Bash" singleton="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../transfer-to-car.sh" />
+      <option name="PARAMETERS" value="192.168.1.20" />
+      <module name="smart-driving" />
+      <envs />
+      <method>
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="Build" run_configuration_type="BashConfigurationType" />
+      </method>
+    </configuration>
+    <configuration default="false" name="htwk_ysd_comparer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_ysd_comparer" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="htwk_movement_visualizer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="HTWK_2016" TARGET_NAME="htwk_movement_visualizer" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <list size="53">
+      <item index="0" class="java.lang.String" itemvalue="Application.htwk_proto_turn" />
+      <item index="1" class="java.lang.String" itemvalue="Application.htwk_marker_detection" />
+      <item index="2" class="java.lang.String" itemvalue="Application.htwk_lane_driver" />
+      <item index="3" class="java.lang.String" itemvalue="Application.htwk_drive_decision" />
+      <item index="4" class="java.lang.String" itemvalue="Application.htwk_state_controller" />
+      <item index="5" class="java.lang.String" itemvalue="Application.htwk_vdar" />
+      <item index="6" class="java.lang.String" itemvalue="Application.htwk_drive_decision_test" />
+      <item index="7" class="java.lang.String" itemvalue="Application.htwk_marker_analysis" />
+      <item index="8" class="java.lang.String" itemvalue="Application.htwk_ultra_median" />
+      <item index="9" class="java.lang.String" itemvalue="Application.htwk_world_filter_example" />
+      <item index="10" class="java.lang.String" itemvalue="Application.htwk_trigger" />
+      <item index="11" class="java.lang.String" itemvalue="Application.htwk_world_service_h" />
+      <item index="12" class="java.lang.String" itemvalue="Application.htwk_base_decision_module" />
+      <item index="13" class="java.lang.String" itemvalue="Application.htwk_world_filter_in" />
+      <item index="14" class="java.lang.String" itemvalue="Application.htwk_world_filter_out" />
+      <item index="15" class="java.lang.String" itemvalue="Application.htwk_distance_sensor_merger" />
+      <item index="16" class="java.lang.String" itemvalue="Application.htwk_wait_parking" />
+      <item index="17" class="java.lang.String" itemvalue="Application.htwk_state_controller_test" />
+      <item index="18" class="java.lang.String" itemvalue="Application.htwk_turn" />
+      <item index="19" class="java.lang.String" itemvalue="Application.htwk_idle" />
+      <item index="20" class="java.lang.String" itemvalue="Application.htwk_imu_merger" />
+      <item index="21" class="java.lang.String" itemvalue="Application.htwk_imu_merger_test" />
+      <item index="22" class="java.lang.String" itemvalue="Application.htwk_pull_out" />
+      <item index="23" class="java.lang.String" itemvalue="Application.htwk_collision_prevention" />
+      <item index="24" class="java.lang.String" itemvalue="Application.htwk_depth_detection" />
+      <item index="25" class="java.lang.String" itemvalue="Application.htwk_image_fusion_reactor" />
+      <item index="26" class="java.lang.String" itemvalue="Application.htwk_ultra_detection" />
+      <item index="27" class="java.lang.String" itemvalue="Application.htwk_client_server" />
+      <item index="28" class="java.lang.String" itemvalue="Application.demo_binding_client" />
+      <item index="29" class="java.lang.String" itemvalue="Application.demo_binding_server" />
+      <item index="30" class="java.lang.String" itemvalue="Application.demo_server" />
+      <item index="31" class="java.lang.String" itemvalue="Application.demo_client" />
+      <item index="32" class="java.lang.String" itemvalue="Application.htwk_crossing" />
+      <item index="33" class="java.lang.String" itemvalue="Application.htwk_messagesbus_netio" />
+      <item index="34" class="java.lang.String" itemvalue="Application.htwk_marker_evaluator" />
+      <item index="35" class="java.lang.String" itemvalue="Application.htwk_obstacle_passing" />
+      <item index="36" class="java.lang.String" itemvalue="Application.htwk_network_reciver" />
+      <item index="37" class="java.lang.String" itemvalue="Application.demo_dataexchange_raw" />
+      <item index="38" class="java.lang.String" itemvalue="Application.data_exchange_raw_filter" />
+      <item index="39" class="java.lang.String" itemvalue="Application.htwk_newtork_reciver" />
+      <item index="40" class="java.lang.String" itemvalue="Application.FILTER" />
+      <item index="41" class="java.lang.String" itemvalue="Application.htwk_carconfig" />
+      <item index="42" class="java.lang.String" itemvalue="Application.STATIC" />
+      <item index="43" class="java.lang.String" itemvalue="Application.htwk_state_controller_new" />
+      <item index="44" class="java.lang.String" itemvalue="Application.htwk_yawtosteer" />
+      <item index="45" class="java.lang.String" itemvalue="Application.htwk_imu_outlier_remover" />
+      <item index="46" class="java.lang.String" itemvalue="Bash.Build" />
+      <item index="47" class="java.lang.String" itemvalue="Bash.Transfer to Car 19" />
+      <item index="48" class="java.lang.String" itemvalue="Bash.Transfer to Car 19 WLAN" />
+      <item index="49" class="java.lang.String" itemvalue="Bash.Transfer to Car 20" />
+      <item index="50" class="java.lang.String" itemvalue="Bash.Transfer to Car 20 WLAN" />
+      <item index="51" class="java.lang.String" itemvalue="Application.htwk_ysd_comparer" />
+      <item index="52" class="java.lang.String" itemvalue="Application.htwk_movement_visualizer" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b669b4b6-43dc-49d8-ac67-501d584fe948" name="Default" comment="" />
+      <changelist id="a0cc02b0-5bac-4fff-a9ab-a7fe8f7befea" name="New changelist" comment="" />
+      <created>1446637723288</created>
+      <option name="number" value="Default" />
+      <updated>1446637723288</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Marker Detect">
+      <created>1453992633334</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1453992633334</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Marker Detect">
+      <created>1453994629440</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1453994629440</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Marker Detect">
+      <created>1455109309810</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1455109309811</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Marker Detect - chooses only the biggest marker">
+      <created>1455124100991</created>
+      <option name="number" value="00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1455124100991</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Marker Detect - chooses only the marker with a specific ratio of permimeter and area">
+      <created>1455189360197</created>
+      <option name="number" value="00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1455189360197</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Crossing Approach on Turn Filter">
+      <created>1455202467312</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1455202467312</updated>
+    </task>
+    <task id="LOCAL-00044" summary="RoadsignEnum">
+      <created>1455203536134</created>
+      <option name="number" value="00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1455203536134</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Turn - BaseFilter">
+      <created>1455203736692</created>
+      <option name="number" value="00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1455203736692</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Turn - Decisions">
+      <created>1455208659206</created>
+      <option name="number" value="00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1455208659206</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Turn - Decisions">
+      <created>1455209415141</created>
+      <option name="number" value="00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1455209415141</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Turn - Decisions">
+      <created>1455280037313</created>
+      <option name="number" value="00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1455280037314</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Turn - Decisionmaking">
+      <created>1455288335177</created>
+      <option name="number" value="00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1455288335177</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Turn - Decisionmaking">
+      <created>1455292302195</created>
+      <option name="number" value="00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1455292302222</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Turn - Decisionmaking">
+      <created>1455296256453</created>
+      <option name="number" value="00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1455296256454</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Collsion, follow driving vihicle in front:&#10;&#10;- reduces own speed to match the speed of the vehicle in front">
+      <created>1455663452801</created>
+      <option name="number" value="00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1455663452804</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Collsion, follow driving vihicle in front:&#10;&#10;- dont follow if emergency stop -&gt; no speed overwrite">
+      <created>1455702072047</created>
+      <option name="number" value="00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1455702072052</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Collsion, follow driving vihicle in front:&#10;&#10;- dont follow if emergency stop -&gt; no speed overwrite">
+      <created>1455703127315</created>
+      <option name="number" value="00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1455703127317</updated>
+    </task>
+    <task id="LOCAL-00055" summary="added RoadsignSize to World Service">
+      <created>1455728517225</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1455728517225</updated>
+    </task>
+    <task id="LOCAL-00056" summary="added RoadsignSize to World Service">
+      <created>1455734489840</created>
+      <option name="number" value="00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1455734489859</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Marker are thrown away if older than 3sec;&#10;&#10;Marker video output is fixed">
+      <created>1455745173776</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1455745173776</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Collision Prevention">
+      <created>1456401996861</created>
+      <option name="number" value="00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1456401996861</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Collision Prevention">
+      <created>1456402253358</created>
+      <option name="number" value="00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1456402253358</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Collision Prevention - formula changes">
+      <created>1456414672684</created>
+      <option name="number" value="00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1456414672685</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Demo Client Serve">
+      <created>1456415530160</created>
+      <option name="number" value="00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1456415530160</updated>
+    </task>
+    <task id="LOCAL-00062" summary="demo client server">
+      <created>1456416730627</created>
+      <option name="number" value="00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1456416730627</updated>
+    </task>
+    <task id="LOCAL-00063" summary="demo client server fix">
+      <created>1456481590490</created>
+      <option name="number" value="00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1456481590490</updated>
+    </task>
+    <task id="LOCAL-00064" summary="demo client server fix">
+      <created>1456495367000</created>
+      <option name="number" value="00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1456495367000</updated>
+    </task>
+    <task id="LOCAL-00065" summary="socket example">
+      <created>1456758554362</created>
+      <option name="number" value="00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1456758554372</updated>
+    </task>
+    <task id="LOCAL-00066" summary="collision follow relative speed">
+      <created>1457016606873</created>
+      <option name="number" value="00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1457016606878</updated>
+    </task>
+    <task id="LOCAL-00067" summary="collision follow log message">
+      <created>1457016831203</created>
+      <option name="number" value="00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1457016831203</updated>
+    </task>
+    <task id="LOCAL-00068" summary="collision follow enable switch">
+      <created>1457017685153</created>
+      <option name="number" value="00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1457017685154</updated>
+    </task>
+    <task id="LOCAL-00069" summary="collision follow changed calc">
+      <created>1457021819534</created>
+      <option name="number" value="00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1457021819544</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Carconfigreader">
+      <created>1457620845227</created>
+      <option name="number" value="00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1457620845237</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Configreader">
+      <created>1457625483068</created>
+      <option name="number" value="00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1457625483079</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Carconfigreader reads config files into different maps">
+      <created>1457701276692</created>
+      <option name="number" value="00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1457701276692</updated>
+    </task>
+    <task id="LOCAL-00073" summary="CarConfigReader Split into Filter(Testing) and Module">
+      <created>1457704803787</created>
+      <option name="number" value="00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1457704803787</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Carconfig split">
+      <created>1457709946586</created>
+      <option name="number" value="00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1457709946586</updated>
+    </task>
+    <task id="LOCAL-00075" summary="CarConfig Stuff">
+      <created>1457715649960</created>
+      <option name="number" value="00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1457715649962</updated>
+    </task>
+    <task id="LOCAL-00076" summary="CarConfig Stuff">
+      <created>1457715687356</created>
+      <option name="number" value="00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1457715687356</updated>
+    </task>
+    <task id="LOCAL-00077" summary="CarConfig now loads all config by initilization">
+      <created>1457789215384</created>
+      <option name="number" value="00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1457789215391</updated>
+    </task>
+    <task id="LOCAL-00078" summary="CarConfig addtional init + read">
+      <created>1457793757330</created>
+      <option name="number" value="00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1457793757330</updated>
+    </task>
+    <task id="LOCAL-00079" summary="CarConfig addtional init + read">
+      <created>1457795475406</created>
+      <option name="number" value="00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1457795475407</updated>
+    </task>
+    <task id="LOCAL-00080" summary="CarConfigFiles">
+      <created>1457795750892</created>
+      <option name="number" value="00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1457795750892</updated>
+    </task>
+    <task id="LOCAL-00081" summary="yaw steer fix">
+      <created>1458229156694</created>
+      <option name="number" value="00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1458229156702</updated>
+    </task>
+    <task id="LOCAL-00082" summary="SpeedController values">
+      <created>1458301456189</created>
+      <option name="number" value="00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1458301456189</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Yaeww to steer">
+      <created>1458402984008</created>
+      <option name="number" value="00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1458402984008</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Kür Distance - Speed checker">
+      <created>1458410728240</created>
+      <option name="number" value="00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1458410728240</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Kür Distance - Speed checker">
+      <created>1458734588248</created>
+      <option name="number" value="00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1458734588255</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Kür Distance - Speed checker">
+      <created>1458806638745</created>
+      <option name="number" value="00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1458806638746</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1206" height="937" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27749142" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3962264" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270925" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24304268" sideWeight="0.50321543" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955974" sideWeight="0.49678457" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31698114" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25171822" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27504912" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="436" y="159" width="481" height="175" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5157233" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3962264" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24304268" sideWeight="0.50321543" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="436" y="159" width="481" height="175" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3245283" sideWeight="0.49678457" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.318239" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27504912" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26890033" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270925" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5157233" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25171822" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.configurationType" implementationName="BashConfigurationType" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="added RoadsignSize to World Service" />
+    <MESSAGE value="Marker are thrown away if older than 3sec;&#10;&#10;Marker video output is fixed" />
+    <MESSAGE value="Collision Prevention" />
+    <MESSAGE value="Collision Prevention - formula changes" />
+    <MESSAGE value="Demo Client Serve" />
+    <MESSAGE value="demo client server" />
+    <MESSAGE value="demo client server fix" />
+    <MESSAGE value="socket example" />
+    <MESSAGE value="collision follow relative speed" />
+    <MESSAGE value="collision follow log message" />
+    <MESSAGE value="collision follow enable switch" />
+    <MESSAGE value="collision follow changed calc" />
+    <MESSAGE value="Carconfigreader" />
+    <MESSAGE value="Configreader" />
+    <MESSAGE value="Carconfigreader reads config files into different maps" />
+    <MESSAGE value="CarConfigReader Split into Filter(Testing) and Module" />
+    <MESSAGE value="Carconfig split" />
+    <MESSAGE value="CarConfig Stuff" />
+    <MESSAGE value="CarConfig now loads all config by initilization" />
+    <MESSAGE value="CarConfig addtional init + read" />
+    <MESSAGE value="CarConfigFiles" />
+    <MESSAGE value="yaw steer fix" />
+    <MESSAGE value="SpeedController values" />
+    <MESSAGE value="Yaeww to steer" />
+    <MESSAGE value="Kür Distance - Speed checker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kür Distance - Speed checker" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="7" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file:///opt/adtf/include/ucom/object_info_intf.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.527027">
+          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/adtf/include/sdk/messagebus_intf.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="15" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/adtf/include/sdk/dataexchange_intf.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="44" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_messagebus_netio/demonetiofilter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_messagebus_netio/demonetiofilter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="246" column="0" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/adtf/src/examples/src/misc/dataexchange_raw/receive_filter/raw_filter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5615385">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_networking/receive_filter/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_networking/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/adtf/src/examples/src/misc/dataexchange_raw/dataexchange_raw.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_park_assist/ParkingBase.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="152" column="26" selection-start-line="152" selection-start-column="26" selection-end-line="152" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_calc_movement/MovementCalculator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.050913837">
+          <caret line="126" column="26" selection-start-line="126" selection-start-column="26" selection-end-line="126" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_movement_analyzer/Movement_analyzer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5874674">
+          <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_obstacle_passing/Passing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.028616853">
+          <caret line="278" column="0" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_park_assist/PullOut.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.028616853">
+          <caret line="513" column="35" selection-start-line="513" selection-start-column="35" selection-end-line="513" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_structs/tLine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_carconfig/stdafx.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_park_assist/ParallelParking.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34340224">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="28" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_park_assist/CrossParking.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37201908">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="24" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_park_assist/PullOut.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34340224">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="25" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_world_service/stdafx.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_world_service_h/tWorldData.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_collision_prevention/stdafx.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_ipm/ipm.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34749034">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_carconfig/stdafx.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/adtf/include/utils/base/error.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23890339">
+          <caret line="86" column="15" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_structs/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_utils/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_collision_prevention/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71142286">
+          <caret line="27" column="108" selection-start-line="27" selection-start-column="108" selection-end-line="27" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_carconfig/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.108216435">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_carconfig/CarConfigReader.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_carconfig/CarConfigReader.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_base_decision_module/BaseDecisionModule.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29647058">
+          <caret line="86" column="91" selection-start-line="86" selection-start-column="86" selection-end-line="86" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_imu_outlier_remover/IMUOutlierRemover.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6257669">
+          <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_collision_prevention/CollisionPrevention.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30203444">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_world_service_h/WorldService.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42097026">
+          <caret line="111" column="30" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_world_service/WorldService.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52112675">
+          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/adtf/include/utils/base/constants.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_yaw_to_steer/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_base_decision_module/BaseDecisionModule.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12476008">
+          <caret line="114" column="28" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_imu_outlier_remover/IMUOutlierRemover.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4453125">
+          <caret line="148" column="51" selection-start-line="148" selection-start-column="51" selection-end-line="148" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_imu_merger/ImuMerger.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="113" column="118" selection-start-line="113" selection-start-column="96" selection-end-line="113" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_collision_prevention/CollisionPrevention.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.023498695">
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_median_values_filter/Median_values.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2859097">
+          <caret line="63" column="117" selection-start-line="63" selection-start-column="97" selection-end-line="63" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_median_values_filter/Median_values.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.001305483">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38903394">
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_ysd_comparer/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28198433">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_ysd_comparer/SDComparer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26548672">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_yaw_to_steer/YawToSteer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_ysd_comparer/SDComparer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="39" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/htwk_yaw_to_steer/YawToSteer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6225681">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

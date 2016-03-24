@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<adtf:configuration xmlns:adtf="adtf">
+ <ce_layouts>
+  <configuration horizontal_scrollbar_value="1" name="DemoBinding" show="true" tab_pos="0" vertical_scrollbar_value="1" zoomfactor="1.000000">
+   <component height="98" name="Clients" width="172" x="315" y="32" />
+   <component height="122" name="Demo_Server_Filter" width="219" x="32" y="32">
+    <output_pin name="I32" />
+    <output_pin name="STRUCT" />
+    <server_object name="adtf.demoiid_published_interface" />
+   </component>
+   <component height="98" name="Demo_Client_Filter" width="287" x="315" y="162">
+    <input_pin name="default_in" />
+    <output_pin name="default_out" />
+    <client_object name="adtf.demoiid_published_interface" />
+    <property name="active" type="bool" value="true" />
+    <property name="alias" type="string" value="Demo_Client_Filter" />
+    <property name="Category" type="int" value="1" />
+    <property name="ClassLabel" type="string" value="Demo Client Filter" />
+    <property name="config_information" type="bool" value="true" />
+    <property name="ConfigId" type="string" value="CFG_MAIN" />
+    <property name="Identifier" type="string" value="adtf.example.demo_dynamic_client" />
+    <property name="idref" type="string" value="adtf.example.demo_dynamic_client" />
+    <property name="NamespaceType" type="string" value="/item/file/filter" />
+    <property name="pin_names" type="string" value="default" />
+    <property name="priority" type="int" value="1" />
+   </component>
+   <connection dest="Demo_Client_Filter" dest_pin="default_in" reldiff="0" shape_type="3" source="Demo_Server_Filter" source_pin="I32" x_p2="267" x_p3="267" x_p4="299" x_p5="299" y_p2="0" y_p3="228" y_p4="228" y_p5="0" />
+   <connection dest="Demo_Client_Filter" dest_pin="adtf.demoiid_published_interface" reldiff="0" shape_type="3" source="Demo_Server_Filter" source_pin="adtf.demoiid_published_interface" x_p2="263" x_p3="263" x_p4="263" x_p5="263" y_p2="0" y_p3="204" y_p4="204" y_p5="0" />
+   <connection dest="Clients" dest_pin="clientconnection2" reldiff="0" shape_type="3" source="Demo_Server_Filter" source_pin="adtf.demoiid_published_interface" x_p2="263" x_p3="263" x_p4="263" x_p5="263" y_p2="0" y_p3="98" y_p4="98" y_p5="0" />
+   <connection dest="Clients" dest_pin="clientconnection" reldiff="0" shape_type="3" source="Demo_Server_Filter" source_pin="adtf.demoiid_published_interface" x_p2="263" x_p3="263" x_p4="263" x_p5="263" y_p2="0" y_p3="74" y_p4="74" y_p5="0" />
+  </configuration>
+  <configuration horizontal_scrollbar_value="1" name="Clients" show="true" tab_pos="1" vertical_scrollbar_value="1" zoomfactor="1.000000">
+   <component height="46" name="clientconnection2" width="124" x="26" y="216" />
+   <component height="46" name="clientconnection" width="116" x="15" y="59" />
+   <component height="98" name="Demo_Client_Filter2" width="287" x="206" y="186">
+    <input_pin name="default_in" />
+    <output_pin name="default_out" />
+    <client_object name="adtf.demoiid_published_interface" />
+    <property name="alias" type="string" value="Demo_Client_Filter2" />
+    <property name="Category" type="int" value="1" />
+    <property name="ClassLabel" type="string" value="Demo Client Filter" />
+    <property name="config_information" type="bool" value="true" />
+    <property name="ConfigId" type="string" value="CFG_MAIN" />
+    <property name="Identifier" type="string" value="adtf.example.demo_dynamic_client" />
+    <property name="idref" type="string" value="adtf.example.demo_dynamic_client" />
+    <property name="NamespaceType" type="string" value="/item/file/filter" />
+    <property name="pin_names" type="string" value="default" />
+    <property name="priority" type="int" value="2" />
+   </component>
+   <component height="98" name="Demo_Client_Filter" width="287" x="209" y="59">
+    <input_pin name="default_in" />
+    <output_pin name="default_out" />
+    <client_object name="adtf.demoiid_published_interface" />
+    <property name="alias" type="string" value="Demo_Client_Filter" />
+    <property name="Category" type="int" value="1" />
+    <property name="ClassLabel" type="string" value="Demo Client Filter" />
+    <property name="config_information" type="bool" value="true" />
+    <property name="ConfigId" type="string" value="CFG_MAIN" />
+    <property name="Identifier" type="string" value="adtf.example.demo_dynamic_client" />
+    <property name="idref" type="string" value="adtf.example.demo_dynamic_client" />
+    <property name="NamespaceType" type="string" value="/item/file/filter" />
+    <property name="pin_names" type="string" value="default" />
+    <property name="priority" type="int" value="1" />
+   </component>
+   <connection dest="Demo_Client_Filter2" dest_pin="adtf.demoiid_published_interface" reldiff="0" shape_type="4" source="" source_pin="clientconnection2" x_p2="115" x_p3="115" x_p4="188" x_p5="188" y_p2="0" y_p3="228" y_p4="228" y_p5="0" />
+   <connection dest="Demo_Client_Filter" dest_pin="adtf.demoiid_published_interface" reldiff="0" shape_type="3" source="" source_pin="clientconnection" x_p2="100" x_p3="100" x_p4="182" x_p5="182" y_p2="0" y_p3="101" y_p4="101" y_p5="0" />
+  </configuration>
+ </ce_layouts>
+</adtf:configuration>

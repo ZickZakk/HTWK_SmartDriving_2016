@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<xtionSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<depthImage>
+		<x_resolution>320</x_resolution>
+		<y_resolution>240</y_resolution>
+		<fps>30</fps>
+	</depthImage>
+	<colorImage>
+		<x_resolution>640</x_resolution>
+		<y_resolution>480</y_resolution>
+		<fps>30</fps>
+	</colorImage>	
+	<options>
+		<setDepthColorSync>0</setDepthColorSync>
+		<setRegistration>0</setRegistration>		
+		<setDepthInMillimeter>0</setDepthInMillimeter>
+		<setAutoExposure>0</setAutoExposure>
+		<setAutoWhiteBalance>1</setAutoWhiteBalance>
+	</options>		
+</xtionSettings>

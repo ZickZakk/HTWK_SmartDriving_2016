@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<carconfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <section1>
+        <key1 type="int">1</key1>
+        <key2 type="float">2.0</key2>
+        <key3 type="bool">1</key3>
+    </section1>
+    <section2>
+        <key1 type="int">1</key1>
+        <key2 type="float">2.0</key2>
+        <key3 type="bool">1</key3>
+    </section2>
+</carconfig>

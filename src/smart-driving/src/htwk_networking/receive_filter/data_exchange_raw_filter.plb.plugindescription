@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<adtf:plugin xmlns:adtf="adtf">
+ <classes>
+  <class Name="adtf.demo.dx.raw.filter" Type="iid.adtf_filter">
+   <Description Value="Take look at the ADTF Documentation." />
+   <Pins>
+    <Pin Direction="1" MajorType="768" Name="Input1" SubType="1">
+     <Description Value="Pin Description." />
+    </Pin>
+    <Pin Direction="1" MajorType="768" Name="Input2" SubType="1">
+     <Description Value="Pin Description." />
+    </Pin>
+   </Pins>
+  </class>
+ </classes>
+ <fileinfo adtfversion="2.13.0" version="1.0" />
+</adtf:plugin>

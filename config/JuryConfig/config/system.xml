@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<adtf:project xmlns:adtf="adtf">
+ <general_settings>
+  <property name="active_configuration" type="String" value="Jury_Main_localhost" />
+  <property name="enable_messagebus" type="Bool" value="true" />
+  <property name="media_description_files" type="String" value="../../../../src/adtfBase/AADC_ADTF_BaseFilters/description/aadc.description" />
+ </general_settings>
+ <configurations>
+  <configuration description="" name="Jury_Main_localhost" url="tcp://localhost:5000">
+   <graph>
+    <subgraph alias="Car" idref="Car" priority="1" url="tcp://192.168.1.224:5000" />
+    <connection connection_priority="50" dest="Car.Jury_Struct_raw" interface="" source="Jury_Config.Jury_Struct_raw" />
+    <subgraph alias="Jury_Config" idref="Jury_Config" priority="2" />
+    <connection connection_priority="50" dest="Car.Emergency_Stop_raw" interface="" source="Jury_Config.Emergency_Stop_raw" />
+    <connection connection_priority="50" dest="Jury_Config.Driver_Struct_raw" interface="" source="Car.Driver_Struct_raw" />
+    <connection connection_priority="50" dest="Jury_Config.Emergency_Stop_Loopback_raw" interface="" source="Car.Emergency_Stop_Loopback_raw" />
+    <connection connection_priority="50" dest="Jury_Config.Jury_Struct_Loopback_raw" interface="" source="Car.Jury_Struct_Loopback_raw" />
+   </graph>
+  </configuration>
+  <configuration description="" name="Jury_Main_IP_ENV_VAR" url="tcp://$VEHICLE_IP$:5000">
+   <graph>
+    <subgraph alias="Jury_Config" idref="Jury_Config" priority="1" />
+    <inport alias="Watchdog_Loop_in" />
+    <inport alias="Driver_Struct" />
+    <outport alias="Jury_Struct" />
+    <outport alias="Emergency_Stop" />
+    <outport alias="Watchdog_Loop_out" />
+    <connection connection_priority="50" dest="Jury_Config.Driver_Struct_raw" interface="" source="Driver_Struct" />
+    <connection connection_priority="50" dest="Emergency_Stop" interface="" source="Jury_Config.Emergency_Stop_raw" />
+    <connection connection_priority="50" dest="Jury_Struct" interface="" source="Jury_Config.Jury_Struct_raw" />
+    <inport alias="Jury_Struct_Loopback" />
+    <inport alias="Emergency_Stop_Loopback" />
+    <connection connection_priority="50" dest="Jury_Config.Jury_Struct_Loopback_raw" interface="" source="Jury_Struct_Loopback" />
+    <connection connection_priority="50" dest="Jury_Config.Emergency_Stop_Loopback_raw" interface="" source="Emergency_Stop_Loopback" />
+   </graph>
+  </configuration>
+  <configuration description="" name="Car" url="tcp://192.168.1.224:5000">
+   <graph>
+    <inport alias="Emergency_Stop_raw" />
+    <inport alias="Jury_Struct_raw" />
+    <outport alias="Driver_Struct_raw" />
+    <outport alias="Jury_Struct_Loopback_raw" />
+    <outport alias="Emergency_Stop_Loopback_raw" />
+    <connection connection_priority="50" dest="Emergency_Stop_Loopback_raw" interface="" source="Emergency_Stop_raw" />
+   </graph>
+  </configuration>
+ </configurations>
+ <fileinfo adtfversion="2.13.0" configversion="1.3" />
+ <configuration_settings />
+ <adtf_include source="../../BaseConfig/IncludeConfig.xml" />
+ <plugins>
+  <plugin optional="true" url="../../../bin/Windows/vc10/$(BUILD_TYPE_2)/*.plb" />
+  <plugin optional="true" url="../../../bin/Linux/gcc/$(BUILD_TYPE_2)/*.plb" />
+ </plugins>
+</adtf:project>

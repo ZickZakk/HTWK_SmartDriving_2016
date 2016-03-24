@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<adtf:plugin xmlns:adtf="adtf">
+ <classes>
+  <class Name="adtf.example.demo_netio" Type="iid.adtf_filter">
+   <Description Value="Take look at the ADTF Documentation." />
+  </class>
+ </classes>
+ <fileinfo adtfversion="2.13.0" version="1.0" />
+</adtf:plugin>

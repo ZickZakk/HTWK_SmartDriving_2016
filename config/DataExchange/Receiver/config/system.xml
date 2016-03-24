@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<adtf:project xmlns:adtf="adtf">
+ <general_settings>
+  <property name="active_configuration" type="String" value="ReceiverCar" />
+  <property name="enable_messagebus" type="Bool" value="true" />
+ </general_settings>
+ <configurations>
+  <configuration description="" name="Sender">
+   <graph>
+    <outport alias="InerMeaUnit_Struct" />
+    <outport alias="Voltage_SpeedCntrl" />
+    <outport alias="WheelRight_Struct" />
+    <outport alias="WheelLeft_Struct" />
+    <outport alias="Voltage_Measurement" />
+   </graph>
+  </configuration>
+  <configuration description="" name="ReceiverCar">
+   <graph>
+    <filter alias="HTWK_YawToSteer" idref="htwk.yawtosteer" priority="1" />
+    <subgraph alias="Receiver" idref="Receiver" priority="0" />
+    <connection connection_priority="50" dest="HTWK_YawToSteer.senderYaw" interface="" source="Receiver.yaw" />
+    <subgraph active="false" alias="Base_Config" idref="Base_Config" priority="2" />
+    <connection active="false" connection_priority="50" dest="HTWK_YawToSteer.localYaw" interface="" source="Base_Config.yaw" />
+    <connection active="false" connection_priority="50" dest="Base_Config.SteeringController" interface="" source="HTWK_YawToSteer.steer" />
+    <connection connection_priority="50" dest="HTWK_YawToSteer.senderSpeed" interface="" source="Receiver.speed" />
+    <filter alias="HTWK_SDComparer" idref="htwk.ysdcomp" priority="3" />
+    <connection connection_priority="50" dest="HTWK_SDComparer.senderCarDist" interface="" source="Receiver.distance_overall" />
+    <connection active="false" connection_priority="50" dest="HTWK_SDComparer.localCarDist" interface="" source="Base_Config.distance_overall" />
+    <connection connection_priority="50" dest="HTWK_SDComparer.speedIn" interface="" source="Receiver.speed" />
+    <connection active="false" connection_priority="50" dest="Base_Config.SpeedController" interface="" source="HTWK_SDComparer.speedOut" />
+    <filter alias="HTWK_Movement_Visualizer" idref="htwk.movement_visualizer" priority="4">
+     <settings>
+      <property name="active" type="Bool" value="true" />
+     </settings>
+    </filter>
+    <filter alias="Video_Display" idref="adtf.visual.video_display" priority="5" />
+    <connection connection_priority="50" dest="Video_Display.input" interface="" source="HTWK_Movement_Visualizer.VideoOut" />
+    <connection connection_priority="50" dest="HTWK_Movement_Visualizer.yawIn" interface="" source="Receiver.yaw" />
+    <connection connection_priority="50" dest="HTWK_Movement_Visualizer.distanceIn" interface="" source="Receiver.distance_overall" />
+   </graph>
+  </configuration>
+  <configuration description="" name="Base_Config">
+   <graph>
+    <filter alias="AADC_Watchdog_Trigger" idref="adtf.aadc.watchdogTrigger" priority="1" />
+    <filter alias="AADC_Arduino_Actuators" idref="adtf.aadc.arduinoActuators" priority="2" />
+    <filter alias="AADC_Arduino_Communication" idref="adtf.aadc.arduinoCommunication" priority="3">
+     <settings>
+      <property name="COM Port" type="String" value="/dev/ttyACM0" />
+     </settings>
+    </filter>
+    <filter alias="AADC_Arduino_Communication2" idref="adtf.aadc.arduinoCommunication" priority="4">
+     <settings>
+      <property name="COM Port" type="String" value="/dev/ttyACM1" />
+     </settings>
+    </filter>
+    <filter alias="AADC_Arduino_Communication3" idref="adtf.aadc.arduinoCommunication" priority="5">
+     <settings>
+      <property name="COM Port" type="String" value="/dev/ttyACM2" />
+     </settings>
+    </filter>
+    <filter alias="AADC_Arduino_Communication4" idref="adtf.aadc.arduinoCommunication" priority="6">
+     <settings>
+      <property name="COM Port" type="String" value="/dev/ttyACM3" />
+     </settings>
+    </filter>
+    <connection connection_priority="50" dest="AADC_Arduino_Actuators.Watchdog_Alive_Flag" interface="" source="AADC_Watchdog_Trigger.WatchdogAliveSignal" />
+    <connection connection_priority="50" dest="AADC_Arduino_Communication.COM_input" interface="" source="AADC_Arduino_Actuators.ArduinoCOM_output" />
+    <connection connection_priority="50" dest="AADC_Arduino_Communication2.COM_input" interface="" source="AADC_Arduino_Actuators.ArduinoCOM_output" />
+    <connection connection_priority="50" dest="AADC_Arduino_Communication3.COM_input" interface="" source="AADC_Arduino_Actuators.ArduinoCOM_output" />
+    <connection connection_priority="50" dest="AADC_Arduino_Communication4.COM_input" interface="" source="AADC_Arduino_Actuators.ArduinoCOM_output" />
+    <filter alias="AADC_Arduino_Sensors" idref="adtf.aadc.arduinoSensors" priority="7" />
+    <connection connection_priority="50" dest="AADC_Arduino_Sensors.ArduinoCOM_input" interface="" source="AADC_Arduino_Communication.COM_output" />
+    <connection connection_priority="50" dest="AADC_Arduino_Sensors.ArduinoCOM_input" interface="" source="AADC_Arduino_Communication2.COM_output" />
+    <connection connection_priority="50" dest="AADC_Arduino_Sensors.ArduinoCOM_input" interface="" source="AADC_Arduino_Communication3.COM_output" />
+    <connection connection_priority="50" dest="AADC_Arduino_Sensors.ArduinoCOM_input" interface="" source="AADC_Arduino_Communication4.COM_output" />
+    <inport alias="SpeedController" />
+    <inport alias="SteeringController" />
+    <connection connection_priority="50" dest="AADC_Arduino_Actuators.SpeedController" interface="" source="SpeedController" />
+    <connection connection_priority="50" dest="AADC_Arduino_Actuators.SteeringController" interface="" source="SteeringController" />
+    <filter alias="AADC_Converter_IMU" idref="adtf.aadc.aadc_converterIMU" priority="3">
+     <settings>
+      <property name="Debug Output to Console" type="Bool" value="true" />
+     </settings>
+    </filter>
+    <connection connection_priority="50" dest="AADC_Converter_IMU" interface="" source="AADC_Arduino_Sensors.InerMeasUnit_Struct" />
+    <filter alias="HTWK_IMU_Outlier_Remover" idref="htwk.imuoutlierremover" priority="8" />
+    <outport alias="yaw" />
+    <connection connection_priority="50" dest="HTWK_IMU_Outlier_Remover.raw_yaw" interface="" source="AADC_Converter_IMU.yaw" />
+    <connection connection_priority="50" dest="yaw" interface="" source="HTWK_IMU_Outlier_Remover.adjusted_yaw" />
+    <filter alias="AADC_Converter_Wheels" idref="adtf.aadc.aadc_converterWheels" priority="9" />
+    <filter alias="HTWK_Movement_Analyzer" idref="htwk.Movement_analyzer" priority="9" />
+    <outport alias="distance_overall" />
+    <connection connection_priority="50" dest="AADC_Converter_Wheels" interface="" source="AADC_Arduino_Sensors.WheelLeft_Struct" />
+    <connection connection_priority="50" dest="AADC_Converter_Wheels" interface="" source="AADC_Arduino_Sensors.WheelRight_Struct" />
+    <connection connection_priority="50" dest="HTWK_Movement_Analyzer" interface="" source="AADC_Converter_Wheels.distance_overall" />
+    <connection connection_priority="50" dest="distance_overall" interface="" source="HTWK_Movement_Analyzer.calc_distance_overall" />
+    <connection connection_priority="50" dest="HTWK_Movement_Analyzer.AccX" interface="" source="AADC_Converter_IMU.accX" />
+    <connection connection_priority="50" dest="HTWK_Movement_Analyzer.AccY" interface="" source="AADC_Converter_IMU.accY" />
+    <connection connection_priority="50" dest="HTWK_Movement_Analyzer" interface="" source="AADC_Converter_Wheels.car_speed" />
+    <filter alias="Harddisk_Recorder" idref="adtf.stg.harddisk_recorder" priority="10" />
+    <connection connection_priority="50" dest="Harddisk_Recorder.WheelRight_Struct" interface="" source="AADC_Arduino_Sensors.WheelRight_Struct" />
+    <connection connection_priority="50" dest="Harddisk_Recorder.WheelLeft_Struct" interface="" source="AADC_Arduino_Sensors.WheelLeft_Struct" />
+    <connection connection_priority="50" dest="Harddisk_Recorder.InerMeasUnit_Struct" interface="" source="AADC_Arduino_Sensors.InerMeasUnit_Struct" />
+    <connection connection_priority="50" dest="Harddisk_Recorder.Voltage_SpeedCntrl" interface="" source="AADC_Arduino_Sensors.Voltage_SpeedCntrl" />
+    <connection connection_priority="50" dest="Harddisk_Recorder.Voltage_Measurement" interface="" source="AADC_Arduino_Sensors.Voltage_Measurement" />
+   </graph>
+  </configuration>
+  <configuration description="" name="Receiver">
+   <graph>
+    <filter alias="AADC_Converter_IMU" idref="adtf.aadc.aadc_converterIMU" priority="3">
+     <settings>
+      <property name="Debug Output to Console" type="Bool" value="true" />
+     </settings>
+    </filter>
+    <filter alias="AADC_Converter_Wheels" idref="adtf.aadc.aadc_converterWheels" priority="4" />
+    <filter alias="HTWK_Movement_Analyzer" idref="htwk.Movement_analyzer" priority="5" />
+    <subgraph alias="Sender" idref="Sender" priority="1" url="tcp://localhost:5000" />
+    <outport alias="yaw" />
+    <connection connection_priority="50" dest="AADC_Converter_IMU.InerMeasUnit_Struct" interface="" source="Sender.InerMeaUnit_Struct" />
+    <connection connection_priority="50" dest="AADC_Converter_Wheels.WheelLeft_Struct" interface="" source="Sender.WheelLeft_Struct" />
+    <connection connection_priority="50" dest="AADC_Converter_Wheels.WheelRight_Struct" interface="" source="Sender.WheelRight_Struct" />
+    <connection connection_priority="50" dest="HTWK_Movement_Analyzer" interface="" source="AADC_Converter_Wheels.car_speed" />
+    <connection connection_priority="50" dest="HTWK_Movement_Analyzer" interface="" source="AADC_Converter_Wheels.distance_overall" />
+    <connection connection_priority="50" dest="HTWK_Movement_Analyzer.AccX" interface="" source="AADC_Converter_IMU.accX" />
+    <connection connection_priority="50" dest="HTWK_Movement_Analyzer.AccY" interface="" source="AADC_Converter_IMU.accY" />
+    <filter alias="HTWK_IMU_Outlier_Remover" idref="htwk.imuoutlierremover" priority="5" />
+    <connection connection_priority="50" dest="yaw" interface="" source="HTWK_IMU_Outlier_Remover.adjusted_yaw" />
+    <connection connection_priority="50" dest="HTWK_IMU_Outlier_Remover.raw_yaw" interface="" source="AADC_Converter_IMU.yaw" />
+    <filter alias="AADC_Calibration_XML" idref="adtf.aadc.aadc_calibrationXML" priority="6">
+     <settings>
+      <property name="Configuration File For Interpolation" type="String" value="../../../../configuration_files/SpeedController20to19.xml" />
+     </settings>
+    </filter>
+    <outport alias="speed" />
+    <connection connection_priority="50" dest="AADC_Calibration_XML.input_value" interface="" source="HTWK_Movement_Analyzer.calc_car_speed" />
+    <connection connection_priority="50" dest="speed" interface="" source="AADC_Calibration_XML.output_value" />
+    <outport alias="distance_overall" />
+    <connection connection_priority="50" dest="distance_overall" interface="" source="HTWK_Movement_Analyzer.calc_distance_overall" />
+    <filter alias="Harddisk_Player" idref="adtf.stg.harddisk_player" priority="7">
+     <settings>
+      <property name="filename" type="String" value="../../../../../../Desktop/kuer.dat" />
+      <property name="active" type="Bool" value="false" />
+     </settings>
+    </filter>
+    <connection active="false" connection_priority="50" dest="AADC_Converter_IMU" interface="" source="Harddisk_Player.InerMeasUnit_Struct" />
+    <connection active="false" connection_priority="50" dest="AADC_Converter_Wheels" interface="" source="Harddisk_Player.WheelLeft_Struct" />
+    <connection active="false" connection_priority="50" dest="AADC_Converter_Wheels" interface="" source="Harddisk_Player.WheelRight_Struct" />
+   </graph>
+  </configuration>
+  <configuration description="" name="LocalCar">
+   <graph>
+    <subgraph alias="Base_Config" idref="Base_Config" priority="1" />
+    <filter alias="AADC_Converter_IMU" idref="adtf.aadc.aadc_converterIMU" priority="3">
+     <settings>
+      <property name="Debug Output to Console" type="Bool" value="true" />
+     </settings>
+    </filter>
+    <inport alias="SpeedController" />
+    <inport alias="SteeringController" />
+    <outport alias="yaw" />
+    <connection connection_priority="50" dest="yaw" interface="" source="AADC_Converter_IMU.yaw" />
+    <connection connection_priority="50" dest="Base_Config.SpeedController" interface="" source="SpeedController" />
+    <connection connection_priority="50" dest="Base_Config.SteeringController" interface="" source="SteeringController" />
+   </graph>
+  </configuration>
+ </configurations>
+ <fileinfo adtfversion="2.13.2" configversion="1.3" />
+ <configuration_settings />
+</adtf:project>

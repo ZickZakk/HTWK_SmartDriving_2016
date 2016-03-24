@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<adtf:plugin xmlns:adtf="adtf">
+ <classes>
+  <class Name="adtf.example.demo_dynamic_client" Type="iid.adtf_filter">
+   <Description Value="Take look at the ADTF Documentation." />
+   <DynamicPins>
+    <DynamicPinTemplate Name="DynamicInputPins" MajorType="0" SubType="0" Direction="1">
+     <Description Value="Pin Description." />
+     <Triggers>
+      <Pin Name="default_out"/>
+     </Triggers>
+    </DynamicPinTemplate>
+    <DynamicPinTemplate Name="DynamicOutputPins" MajorType="0" SubType="0" Direction="2" Threading="synchronous">
+     <Description Value="Pin Description." />
+    </DynamicPinTemplate>
+   </DynamicPins>
+   <Bindings>
+    <BindingObject Direction="1" Name="" iid="adtf.demoiid_published_interface" oid="" ShortDescription="">
+    </BindingObject>
+   </Bindings>
+  </class>
+ </classes>
+ <fileinfo adtfversion="2.13.0" version="1.0" />
+</adtf:plugin>

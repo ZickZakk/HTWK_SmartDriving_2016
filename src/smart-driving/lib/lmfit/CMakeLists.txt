@@ -1,0 +1,12 @@
+set(LMFIT lmfit)
+
+set(LMFIT_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR} PARENT_SCOPE)
+
+if (TARGET ${LMFIT})
+    message("${LMFIT} is already defined")
+else ()
+    file(GLOB_RECURSE FILES ${CMAKE_CURRENT_SOURCE_DIR}/*.c)
+    file(GLOB_RECURSE HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/*.h)
+
+    ADD_LIBRARY(${LMFIT} STATIC ${FILES} ${HEADERS})
+endif ()

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_grayscale/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_grayscale/Grayscale.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_grayscale/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_grayscale/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_grayscale/Grayscale.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_temporal_image/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_temporal_image/TemporalImage.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_temporal_image/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_temporal_image/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_temporal_image/TemporalImage.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_marker_evaluator/MarkerEvaluator.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_marker_evaluator/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_marker_evaluator/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_marker_evaluator/MarkerEvaluator.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_marker_evaluator/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_world_filter/WorldFilterIn.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_world_filter/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_world_filter/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_world_filter/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_world_filter/WorldFilterIn.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_movement_visualizer/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_movement_visualizer/MovementVisualizer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_movement_visualizer/MovementVisualizer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_movement_visualizer/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_movement_visualizer/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/tRoadSign.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/WorldModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/ObstacleGrid.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/tManeuver.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/Direction.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/tLineStatus.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/tCarState.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/DriveModule.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/tPoint.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/tRect.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/tLine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/tIMU.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/tLane.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/tReadyModule.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_structs/Maneuverlist.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_movement_analyzer/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_movement_analyzer/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_movement_analyzer/Movement_analyzer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_movement_analyzer/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_movement_analyzer/Movement_analyzer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_collision_prevention/CollisionPrevention.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_collision_prevention/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_collision_prevention/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_collision_prevention/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_collision_prevention/CollisionPrevention.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_median_values/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_median_values/Median_values_lib.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_median_values/Median_values_lib.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_image_fusion_reactor/ImageFusionReactor.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_image_fusion_reactor/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_image_fusion_reactor/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_image_fusion_reactor/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_image_fusion_reactor/ImageFusionReactor.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_park_assist/PullOut.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_park_assist/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_park_assist/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_park_assist/CrossParking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_park_assist/CrossParking.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_park_assist/ParkingBase.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_park_assist/PullOut.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_park_assist/ParallelParking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_park_assist/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_park_assist/ParallelParking.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_park_assist/ParkingBase.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_state_controller/StateControllerNew.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_state_controller/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_state_controller/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_state_controller/StateControllerNew.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_state_controller/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_noise_remover/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_noise_remover/NoiseRemover.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_noise_remover/NoiseRemover.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_noise_remover/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_noise_remover/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_logger/Logger.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_logger/Logger.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_logger/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_region_of_interest/RegionOfInterest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_region_of_interest/RegionOfInterest.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_region_of_interest/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_region_of_interest/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_region_of_interest/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ipm/ipm.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ipm/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ipm/ipm.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ipm/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ipm/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_calc_movement/MovementCalculator.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_calc_movement/MovementCalculator.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_calc_movement/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ultra_median/UltraMedian.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ultra_median/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ultra_median/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ultra_median/UltraMedian.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ultra_median/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_drive_decision/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_drive_decision/DriveDecision.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_drive_decision/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_drive_decision/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_drive_decision/DriveDecision.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_imu_outlier_remover/IMUOutlierRemover.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_imu_outlier_remover/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_imu_outlier_remover/IMUOutlierRemover.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_imu_outlier_remover/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_imu_outlier_remover/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_idle/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_idle/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_idle/Idle.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_idle/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_idle/Idle.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_yaw_to_steer/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_yaw_to_steer/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_yaw_to_steer/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_yaw_to_steer/YawToSteer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_yaw_to_steer/YawToSteer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_world_service_h/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_world_service_h/tWorldData.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_world_service_h/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_world_service_h/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_world_service_h/WorldService.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_lane_detection/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_lane_detection/lane_detection.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_lane_detection/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_lane_detection/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_lane_detection/lane_detection.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ysd_comparer/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ysd_comparer/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ysd_comparer/SDComparer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ysd_comparer/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ysd_comparer/SDComparer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_signal_restrictor/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_signal_restrictor/SignalRestrictor.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_signal_restrictor/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_signal_restrictor/SignalRestrictor.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_signal_restrictor/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_depth_detection/ConnectedComponentFinder.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_depth_detection/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_depth_detection/NoiseRemover.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_depth_detection/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_depth_detection/CoordinateConverter.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_depth_detection/CoordinateConverter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_depth_detection/BirdsEyeViewer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_depth_detection/DepthDetection.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_depth_detection/GroundRemover.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_depth_detection/NoiseRemover.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_depth_detection/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_depth_detection/ConnectedComponentFinder.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_depth_detection/DepthDetection.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_depth_detection/BirdsEyeViewer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_depth_detection/GroundRemover.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/PolynomialFunction.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/LinearFunction.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/HTWKMath.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/DateUtils.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/HTWKMath.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/PolynomialFitter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/DateUtils.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/CalcOffset.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/GeneralUtils.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/MapChecker.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/DriveUtils.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/MapChecker.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/DriveUtils.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/GeneralUtils.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/StringUtils.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/VisionUtils.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/CalcOffset.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/LinearFunction.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/VisionUtils.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/PolynomialFunction.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/StringUtils.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_utils/PolynomialFitter.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_turn/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_turn/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_turn/Turn.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_turn/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_turn/Turn.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_imu_merger/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_imu_merger/ImuMergerTest.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_imu_merger/ImuMerger.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_imu_merger/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_imu_merger/ImuMergerTest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_imu_merger/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_imu_merger/ImuMerger.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_marker_detection/MarkerDetection.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_marker_detection/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_marker_detection/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_marker_detection/MarkerDetection.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_marker_detection/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_base_decision_module/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_base_decision_module/BaseDecisionModule.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_base_decision_module/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_base_decision_module/BaseDecisionModule.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_base_decision_module/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_lane_driver/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_lane_driver/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_lane_driver/lane_driver.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_lane_driver/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_lane_driver/lane_driver.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_median_values_filter/Median_values.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_median_values_filter/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_median_values_filter/Median_values.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_median_values_filter/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_median_values_filter/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_world_service/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_world_service/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_world_service/WorldService.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_world_service/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ultra_detection/htwk_ultra_grid.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ultra_detection/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ultra_detection/htwk_ultra_detection.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ultra_detection/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ultra_detection/htwk_ultra_detection.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ultra_detection/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_ultra_detection/htwk_ultra_grid.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_trigger/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_trigger/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_trigger/Trigger.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_trigger/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_trigger/Trigger.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_obstacle_passing/Passing.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_obstacle_passing/Passing.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_obstacle_passing/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_obstacle_passing/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_obstacle_passing/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/Vision.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/CrossingLine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/LaneLineEnd.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/InitLine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/DumbLine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/FullLine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/BaseLaneLine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/CrossingLine.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/VanishedLine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/DumbLine.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/IPMBorder.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/LaneDetectionData.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/BrokenLine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/IPMBorder.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/VanishedLine.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/LostLine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/InitLine.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/LostLine.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/CrossingDetection/CrossingDetector.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/CrossingDetection/SideStruct.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/CrossingDetection/CrossingDetector.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/CrossingDetection/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/CrossingDetection/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/CrossingDetection/SideStruct.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/CrossingDetection/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/BrokenLine.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/BaseLaneLine.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/FullLine.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/LaneDetectionData.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/LaneDetection/LaneLineEnd.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_vision/Vision.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_carconfig/CarConfigReader.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_carconfig/stdafx.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_carconfig/CarConfigReader.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_carconfig/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/htwk_carconfig/stdafx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/lmfit/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/lmfit/lmstruct.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/lmfit/lmmin.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/lmfit/lmmin.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/lmfit/lmcurve_tyd.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/lmfit/lmcurve.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/lmfit/lmcurve.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/lmfit/lmcurve_tyd.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/htwk_logger/LoggerTest.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/htwk_vision/VisionTest.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/htwk_park_assist/ParkAssistTest.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/run_tests.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/teamcity/teamcity_messages.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/teamcity/teamcity_cppunit.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/teamcity/teamcity_messages.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/teamcity/teamcity_cppunit.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/common/HTWKTest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/htwk_utils/HTWKMathTest.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/htwk_utils/LinearFunctionTest.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/htwk_carconfig/CarConfigReaderTest.cpp" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Header Search Paths">
+        <CLASSES>
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed" />
+          <root url="file:///usr/local/include" />
+          <root url="file:///opt/aruco/1.3.0/include" />
+          <root url="file:///opt/opencv/3.0.0/build" />
+          <root url="file:///opt/opencv/3.0.0/modules/shape/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/features2d/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/imgproc/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/flann/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/highgui/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/core/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/stitching/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/superres/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/hal/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/calib3d/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/ts/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/ml/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/imgcodecs/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/videostab/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/video/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/videoio/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/photo/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/objdetect/include" />
+          <root url="file:///opt/opencv/3.0.0/include" />
+          <root url="file:///opt/adtf/include" />
+          <root url="file:///opt/adtf/addons/adtf-display-toolbox/include" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed" />
+          <root url="file:///usr/local/include" />
+          <root url="file:///opt/aruco/1.3.0/include" />
+          <root url="file:///opt/opencv/3.0.0/build" />
+          <root url="file:///opt/opencv/3.0.0/modules/shape/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/features2d/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/imgproc/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/flann/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/highgui/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/core/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/stitching/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/superres/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/hal/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/calib3d/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/ts/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/ml/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/imgcodecs/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/videostab/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/video/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/videoio/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/photo/include" />
+          <root url="file:///opt/opencv/3.0.0/modules/objdetect/include" />
+          <root url="file:///opt/opencv/3.0.0/include" />
+          <root url="file:///opt/adtf/include" />
+          <root url="file:///opt/adtf/addons/adtf-display-toolbox/include" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

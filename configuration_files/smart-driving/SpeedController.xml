@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<calibration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<settings>
+		<mode>linear</mode>
+	</settings>
+	<supportingPoints>		
+		<point>
+			<xValue>-6.0</xValue>
+			<yValue>180</yValue>
+		</point>		
+		<point>
+			<xValue>-4.3</xValue>
+			<yValue>150</yValue>
+		</point>		
+		<point>
+			<xValue>-2.0</xValue>
+			<yValue>125</yValue>
+		</point>	
+		<point>
+			<xValue>0</xValue>
+			<yValue>90</yValue>
+		</point>		
+		<point>
+			<xValue>2.2</xValue>
+			<yValue>55</yValue>
+		</point>
+		<point>
+			<xValue>4.1</xValue>
+			<yValue>30</yValue>
+		</point>
+		<point>
+			<xValue>5.7</xValue>
+			<yValue>0</yValue>
+		</point>
+	</supportingPoints>
+</calibration>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<adtf:project xmlns:adtf="adtf">
+ <general_settings>
+  <property name="active_configuration" type="String" value="Sender" />
+  <property name="enable_messagebus" type="Bool" value="true" />
+ </general_settings>
+ <configurations>
+  <configuration description="" name="Sender">
+   <graph>
+    <subgraph alias="Base_Config" idref="Base_Config" priority="1" />
+    <subgraph alias="Receiver" idref="Receiver" priority="2" url="tcp://192.168.1.19:5000" />
+    <connection connection_priority="50" dest="Receiver.WheelLeft_Struct" interface="" source="Base_Config.WheelLeft_Struct" />
+    <connection connection_priority="50" dest="Receiver.WheelRight_Struct" interface="" source="Base_Config.WheelRight_Struct" />
+    <connection connection_priority="50" dest="Receiver.InerMeaUnit_Struct" interface="" source="Base_Config.InerMeasUnit_Struct" />
+    <connection connection_priority="50" dest="Receiver.Voltage_SpeedCntrl" interface="" source="Base_Config.Voltage_SpeedCntrl" />
+    <connection connection_priority="50" dest="Receiver.Voltage_Measurement" interface="" source="Base_Config.Voltage_Measurement" />
+    <filter alias="Harddisk_Player" idref="adtf.stg.harddisk_player" priority="3">
+     <settings>
+      <property name="filename" type="String" value="../../../../../Test Data/freeDriving.dat" />
+      <property name="active" type="Bool" value="false" />
+     </settings>
+    </filter>
+    <connection active="false" connection_priority="50" dest="Receiver.InerMeaUnit_Struct" interface="" source="Harddisk_Player.InerMeasUnit_Struct" />
+    <connection active="false" connection_priority="50" dest="Receiver.Voltage_SpeedCntrl" interface="" source="Harddisk_Player.Voltage_SpeedCntrl" />
+    <connection active="false" connection_priority="50" dest="Receiver.WheelLeft_Struct" interface="" source="Harddisk_Player.WheelLeft_Struct" />
+    <connection active="false" connection_priority="50" dest="Receiver.WheelRight_Struct" interface="" source="Harddisk_Player.WheelRight_Struct" />
+    <filter alias="HTWK_Movement_Visualizer" idref="htwk.movement_visualizer" priority="4" />
+    <filter alias="Video_Display" idref="adtf.visual.video_display" priority="5" />
+    <filter alias="AADC_Converter_Wheels" idref="adtf.aadc.aadc_converterWheels" priority="6" />
+    <filter alias="HTWK_Movement_Analyzer" idref="htwk.Movement_analyzer" priority="7" />
+    <filter alias="AADC_Converter_IMU" idref="adtf.aadc.aadc_converterIMU" priority="8" />
+    <filter alias="HTWK_IMU_Outlier_Remover" idref="htwk.imuoutlierremover" priority="9" />
+    <connection connection_priority="50" dest="Video_Display.input" interface="" source="HTWK_Movement_Visualizer.VideoOut" />
+    <connection connection_priority="50" dest="AADC_Converter_Wheels.WheelRight_Struct" interface="" source="Base_Config.WheelRight_Struct" />
+    <connection connection_priority="50" dest="AADC_Converter_Wheels.WheelLeft_Struct" interface="" source="Base_Config.WheelLeft_Struct" />
+    <connection connection_priority="50" dest="HTWK_Movement_Analyzer" interface="" source="AADC_Converter_Wheels.car_speed" />
+    <connection connection_priority="50" dest="HTWK_Movement_Analyzer" interface="" source="AADC_Converter_Wheels.distance_overall" />
+    <connection connection_priority="50" dest="HTWK_Movement_Visualizer.distanceIn" interface="" source="HTWK_Movement_Analyzer.calc_distance_overall" />
+    <connection connection_priority="50" dest="AADC_Converter_IMU.InerMeasUnit_Struct" interface="" source="Base_Config.InerMeasUnit_Struct" />
+    <connection connection_priority="50" dest="HTWK_Movement_Analyzer.AccX" interface="" source="AADC_Converter_IMU.accX" />
+    <connection connection_priority="50" dest="HTWK_Movement_Analyzer.AccY" interface="" source="AADC_Converter_IMU.accY" />
+    <connection connection_priority="50" dest="HTWK_IMU_Outlier_Remover.raw_yaw" interface="" source="AADC_Converter_IMU.yaw" />
+    <connection connection_priority="50" dest="HTWK_Movement_Visualizer.yawIn" interface="" source="HTWK_IMU_Outlier_Remover.adjusted_yaw" />
+   </graph>
+  </configuration>
+  <configuration description="" name="Receiver">
+   <graph>
+    <inport alias="InerMeaUnit_Struct" />
+    <inport alias="Voltage_SpeedCntrl" />
+    <inport alias="WheelRight_Struct" />
+    <inport alias="WheelLeft_Struct" />
+    <inport alias="Voltage_Measurement" />
+   </graph>
+  </configuration>
+  <configuration description="" name="Base_Config">
+   <graph>
+    <filter alias="AADC_Arduino_Actuators" idref="adtf.aadc.arduinoActuators" priority="2" />
+    <filter alias="AADC_Arduino_Sensors" idref="adtf.aadc.arduinoSensors" priority="7" />
+    <filter alias="AADC_Arduino_Communication" idref="adtf.aadc.arduinoCommunication" priority="3">
+     <settings>
+      <property name="COM Port" type="String" value="/dev/ttyACM0" />
+     </settings>
+    </filter>
+    <filter alias="AADC_Arduino_Communication2" idref="adtf.aadc.arduinoCommunication" priority="4">
+     <settings>
+      <property name="COM Port" type="String" value="/dev/ttyACM1" />
+     </settings>
+    </filter>
+    <filter alias="AADC_Arduino_Communication3" idref="adtf.aadc.arduinoCommunication" priority="5">
+     <settings>
+      <property name="COM Port" type="String" value="/dev/ttyACM2" />
+     </settings>
+    </filter>
+    <filter alias="AADC_Arduino_Communication4" idref="adtf.aadc.arduinoCommunication" priority="6">
+     <settings>
+      <property name="COM Port" type="String" value="/dev/ttyACM3" />
+     </settings>
+    </filter>
+    <filter alias="AADC_Watchdog_Trigger" idref="adtf.aadc.watchdogTrigger" priority="1" />
+    <inport alias="SpeedController" />
+    <inport alias="SteeringController" />
+    <outport alias="WheelLeft_Struct" />
+    <outport alias="WheelRight_Struct" />
+    <outport alias="InerMeasUnit_Struct" />
+    <outport alias="Voltage_SpeedCntrl" />
+    <outport alias="Voltage_Measurement" />
+    <connection connection_priority="50" dest="AADC_Arduino_Communication.COM_input" interface="" source="AADC_Arduino_Actuators.ArduinoCOM_output" />
+    <connection connection_priority="50" dest="AADC_Arduino_Communication2.COM_input" interface="" source="AADC_Arduino_Actuators.ArduinoCOM_output" />
+    <connection connection_priority="50" dest="AADC_Arduino_Communication3.COM_input" interface="" source="AADC_Arduino_Actuators.ArduinoCOM_output" />
+    <connection connection_priority="50" dest="AADC_Arduino_Communication4.COM_input" interface="" source="AADC_Arduino_Actuators.ArduinoCOM_output" />
+    <connection connection_priority="50" dest="AADC_Arduino_Sensors.ArduinoCOM_input" interface="" source="AADC_Arduino_Communication.COM_output" />
+    <connection connection_priority="50" dest="AADC_Arduino_Sensors.ArduinoCOM_input" interface="" source="AADC_Arduino_Communication2.COM_output" />
+    <connection connection_priority="50" dest="AADC_Arduino_Sensors.ArduinoCOM_input" interface="" source="AADC_Arduino_Communication3.COM_output" />
+    <connection connection_priority="50" dest="AADC_Arduino_Sensors.ArduinoCOM_input" interface="" source="AADC_Arduino_Communication4.COM_output" />
+    <connection connection_priority="50" dest="AADC_Arduino_Actuators.Watchdog_Alive_Flag" interface="" source="AADC_Watchdog_Trigger.WatchdogAliveSignal" />
+    <connection connection_priority="50" dest="AADC_Arduino_Actuators.SpeedController" interface="" source="SpeedController" />
+    <connection connection_priority="50" dest="AADC_Arduino_Actuators.SteeringController" interface="" source="SteeringController" />
+    <connection connection_priority="50" dest="WheelLeft_Struct" interface="" source="AADC_Arduino_Sensors.WheelLeft_Struct" />
+    <connection connection_priority="50" dest="WheelRight_Struct" interface="" source="AADC_Arduino_Sensors.WheelRight_Struct" />
+    <connection connection_priority="50" dest="InerMeasUnit_Struct" interface="" source="AADC_Arduino_Sensors.InerMeasUnit_Struct" />
+    <connection connection_priority="50" dest="Voltage_SpeedCntrl" interface="" source="AADC_Arduino_Sensors.Voltage_SpeedCntrl" />
+    <connection connection_priority="50" dest="Voltage_Measurement" interface="" source="AADC_Arduino_Sensors.Voltage_Measurement" />
+   </graph>
+  </configuration>
+ </configurations>
+ <fileinfo adtfversion="2.13.2" configversion="1.3" />
+ <configuration_settings />
+</adtf:project>

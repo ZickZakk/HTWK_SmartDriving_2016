@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<adtf:project xmlns:adtf="adtf">
+ <general_settings>
+  <property name="active_configuration" type="String" value="DemoBinding" />
+ </general_settings>
+ <configurations>
+  <configuration description="" name="DemoBinding">
+   <graph>
+    <filter alias="Demo_Client_Filter" idref="adtf.example.demo_dynamic_client" priority="1">
+     <settings>
+      <property name="active" type="Bool" value="true" />
+     </settings>
+    </filter>
+    <filter alias="Demo_Server_Filter" idref="adtf.example.demo_dynamic_server" priority="2">
+     <settings>
+      <property name="active" type="Bool" value="true" />
+     </settings>
+    </filter>
+    <subgraph alias="Clients" idref="Clients" priority="0" />
+    <connection connection_priority="50" dest="Clients.clientconnection" interface="adtf.demoiid_published_interface" source="Demo_Server_Filter" />
+    <connection connection_priority="50" dest="Clients.clientconnection2" interface="adtf.demoiid_published_interface" source="Demo_Server_Filter" />
+    <connection connection_priority="50" dest="Demo_Client_Filter" interface="adtf.demoiid_published_interface" source="Demo_Server_Filter" />
+    <connection connection_priority="50" dest="Demo_Client_Filter.default_in" interface="" source="Demo_Server_Filter.I32" />
+    <connection connection_priority="50" dest="Demo_Client_Filter" interface="adtf.demoiid_published_interface" source="Demo_Server_Filter" />
+   </graph>
+  </configuration>
+  <configuration description="" name="Clients">
+   <graph>
+    <filter alias="Demo_Client_Filter" idref="adtf.example.demo_dynamic_client" priority="1" />
+    <filter alias="Demo_Client_Filter2" idref="adtf.example.demo_dynamic_client" priority="2" />
+    <inport alias="clientconnection" />
+    <inport alias="clientconnection2" />
+    <connection connection_priority="50" dest="Demo_Client_Filter" interface="adtf.demoiid_published_interface" source="clientconnection" />
+    <connection connection_priority="50" dest="Demo_Client_Filter2" interface="adtf.demoiid_published_interface" source="clientconnection2" />
+   </graph>
+  </configuration>
+ </configurations>
+ <fileinfo adtfversion="2.13.2" configversion="1.3" />
+ <configuration_settings />
+</adtf:project>

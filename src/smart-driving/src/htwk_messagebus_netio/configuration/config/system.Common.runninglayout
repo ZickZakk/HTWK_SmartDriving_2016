@@ -1,0 +1,12 @@
+<adtf:export xmlns:adtf="adtf">
+ <folder name="NetIO_Client">
+  <folder name="components">
+   <folder name="FilterTraceView" />
+  </folder>
+ </folder>
+ <folder name="NetIO_Server">
+  <folder name="components">
+   <folder name="FilterTraceView" />
+  </folder>
+ </folder>
+</adtf:export>

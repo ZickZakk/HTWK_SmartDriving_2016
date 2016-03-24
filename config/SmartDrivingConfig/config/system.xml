@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<adtf:project xmlns:adtf="adtf">
+ <general_settings>
+  <property name="active_configuration" type="String" value="Main" />
+  <property name="enable_messagebus" type="Bool" value="true" />
+  <property name="synchronizing_type" type="Int" value="1" />
+  <property name="global_log_level" type="Int" value="3" />
+  <property name="media_description_files" type="String" value="./../description/*.description;./../addons/*/description/*.description;./../src/examples/src/description/*.description;../../../description/*.*" />
+  <property name="console_log_to_stdout" type="Bool" value="false" />
+ </general_settings>
+ <configurations>
+  <configuration description="" name="Main">
+   <graph>
+    <subgraph alias="Base_Config" idref="Base_Config" priority="4" />
+    <connection connection_priority="50" dest="Base_Config.Watchdog_Alive_Flag" interface="" source="AADC_Watchdog_Trigger.WatchdogAliveSignal" />
+    <filter alias="AADC_Watchdog_Trigger" idref="adtf.aadc.watchdogTrigger" priority="4">
+     <settings />
+    </filter>
+    <subgraph alias="Sensoraufbereitung" idref="Sensoraufbereitung" priority="5" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Ultrasonic_Front_Left" interface="" source="Base_Config.Ultrasonic_Front_Left" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Ultrasonic_Front_Center_Left" interface="" source="Base_Config.Ultrasonic_Front_Center_Left" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Ultrasonic_Front_Center" interface="" source="Base_Config.Ultrasonic_Front_Center" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Ultrasonic_Front_Center_Right" interface="" source="Base_Config.Ultrasonic_Front_Center_Right" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Ultrasonic_Front_Right" interface="" source="Base_Config.Ultrasonic_Front_Right" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Ultrasonic_Side_Left" interface="" source="Base_Config.Ultrasonic_Side_Left" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Ultrasonic_Side_Right" interface="" source="Base_Config.Ultrasonic_Side_Right" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Ultrasonic_Rear_Left" interface="" source="Base_Config.Ultrasonic_Rear_Left" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Ultrasonic_Rear_Center" interface="" source="Base_Config.Ultrasonic_Rear_Center" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Ultrasonic_Rear_Right" interface="" source="Base_Config.Ultrasonic_Rear_Right" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Voltage_Measurement" interface="" source="Base_Config.Voltage_Measurement" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Voltage_SpeedCntrl" interface="" source="Base_Config.Voltage_SpeedCntrl" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.InerMeasUnit_Struct" interface="" source="Base_Config.InerMeasUnit_Struct" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.WheelLeft_Struct" interface="" source="Base_Config.WheelLeft_Struct" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.WheelRightStruct" interface="" source="Base_Config.WheelRight_Struct" />
+    <subgraph alias="Entscheidungsfindung" idref="Entscheidungsfindung" priority="6" />
+    <filter alias="AADC_Calibration_XML" idref="adtf.aadc.aadc_calibrationXML" priority="5">
+     <settings>
+      <property name="Configuration File For Interpolation" type="String" value="../../../configuration_files/smart-driving/SpeedController.xml" />
+     </settings>
+    </filter>
+    <connection connection_priority="50" dest="AADC_Calibration_XML.input_value" interface="" source="Entscheidungsfindung.speed" />
+    <connection connection_priority="50" dest="Base_Config.SpeedController" interface="" source="AADC_Calibration_XML.output_value" />
+    <connection connection_priority="50" dest="Base_Config.SteeringController" interface="" source="Entscheidungsfindung.SteeringAngle" />
+    <filter alias="HTWK_Signal_Restrictor" idref="htwk.signalrestrictor" priority="6" />
+    <filter alias="HTWK_Signal_Restrictor2" idref="htwk.signalrestrictor" priority="6" />
+    <filter alias="HTWK_Signal_Restrictor3" idref="htwk.signalrestrictor" priority="7" />
+    <filter alias="HTWK_Signal_Restrictor4" idref="htwk.signalrestrictor" priority="6" />
+    <filter alias="HTWK_Signal_Restrictor5" idref="htwk.signalrestrictor" priority="7" />
+    <filter alias="HTWK_Signal_Restrictor6" idref="htwk.signalrestrictor" priority="5" />
+    <filter alias="AADC_Steering_Controller" idref="adtf.aadc.aadc_steeringController" priority="6">
+     <settings>
+      <property name="Configuration File For Mapping" type="String" value="../../../configuration_files/smart-driving/steering20.xml" />
+     </settings>
+    </filter>
+    <connection connection_priority="50" dest="HTWK_Signal_Restrictor.Bool_In" interface="" source="Entscheidungsfindung.brakeLightEnabled" />
+    <connection connection_priority="50" dest="Base_Config.brakeLightEnabled" interface="" source="HTWK_Signal_Restrictor.Bool_Out" />
+    <connection connection_priority="50" dest="HTWK_Signal_Restrictor2.Bool_In" interface="" source="Entscheidungsfindung.headLightEnabled" />
+    <connection connection_priority="50" dest="Base_Config.headLightEnabled" interface="" source="HTWK_Signal_Restrictor2.Bool_Out" />
+    <connection connection_priority="50" dest="HTWK_Signal_Restrictor3.Bool_In" interface="" source="Entscheidungsfindung.turnSignalRightEnabled" />
+    <connection connection_priority="50" dest="Base_Config.turnSignalRightEnabled" interface="" source="HTWK_Signal_Restrictor3.Bool_Out" />
+    <connection connection_priority="50" dest="HTWK_Signal_Restrictor4.Bool_In" interface="" source="Entscheidungsfindung.reverseLightsEnabled" />
+    <connection connection_priority="50" dest="Base_Config.reverseLightsEnabled" interface="" source="HTWK_Signal_Restrictor4.Bool_Out" />
+    <connection connection_priority="50" dest="HTWK_Signal_Restrictor5.Bool_In" interface="" source="Entscheidungsfindung.turnSignalLeftEnabled" />
+    <connection connection_priority="50" dest="Base_Config.turnSignalLeftEnabled" interface="" source="HTWK_Signal_Restrictor5.Bool_Out" />
+    <connection connection_priority="50" dest="HTWK_Signal_Restrictor6.Bool_In" interface="" source="Entscheidungsfindung.hazzardLightsEnabled" />
+    <connection connection_priority="50" dest="Base_Config.hazzardLightsEnabled" interface="" source="HTWK_Signal_Restrictor6.Bool_Out" />
+    <connection connection_priority="50" dest="AADC_Steering_Controller.curvature" interface="" source="Entscheidungsfindung.SteeringRadius" />
+    <connection connection_priority="50" dest="Base_Config.SteeringController" interface="" source="AADC_Steering_Controller.servoAngle" />
+    <filter alias="HTWK_Signal_Restrictor7" idref="htwk.signalrestrictor" priority="8" />
+    <connection connection_priority="50" dest="HTWK_Signal_Restrictor7.Bool_In" interface="" source="Entscheidungsfindung.Set_Error_State" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Module_Reset" interface="" source="Entscheidungsfindung.Module_Reset" />
+    <filter alias="AADC_Xtion_Camera" idref="adtf.aadc.aadc_xtionCamera" priority="7">
+     <settings>
+      <property name="Configuration File" type="String" value="../../../configuration_files/xtionSettings.xml" />
+     </settings>
+    </filter>
+    <connection connection_priority="50" dest="Sensoraufbereitung.Video_RGB_Input" interface="" source="AADC_Xtion_Camera.Video_RGB" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Video_Depth_Input" interface="" source="AADC_Xtion_Camera.Depth_Image" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Ultrasonic_Struct" interface="" source="Base_Config.Ultrasonic_Struct" />
+    <filter alias="HTWK_StateController_New" idref="htwk.statecontroller.new" priority="9">
+     <settings>
+      <property name="State" type="Int" value="2" />
+      <property name="Maneuver" type="Int" value="104" />
+      <property name="Controller Mode" type="Int" value="1" />
+     </settings>
+    </filter>
+    <connection connection_priority="50" dest="HTWK_StateController_New.Maneuver_List" interface="" source="Base_Config.Jury_ManeuverList" />
+    <connection connection_priority="50" dest="HTWK_StateController_New.Jury_Struct" interface="" source="Base_Config.Jury_Struct" />
+    <connection connection_priority="50" dest="HTWK_StateController_New.Increment_Maneuver_ID" interface="" source="Entscheidungsfindung.Increment_Maneuver_ID" />
+    <connection connection_priority="50" dest="HTWK_StateController_New.Error_Input" interface="" source="Entscheidungsfindung.Set_Error_State" />
+    <connection connection_priority="50" dest="Base_Config.Driver_Struct" interface="" source="HTWK_StateController_New.Driver_Struct" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Maneuver" interface="" source="HTWK_StateController_New.Maneuver_Enum" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.CarState" interface="" source="HTWK_StateController_New.CarState_Enum" />
+    <connection connection_priority="50" dest="Sensoraufbereitung.Module_Reset" interface="" source="HTWK_StateController_New.Reset_Output" />
+    <connection connection_priority="50" dest="HTWK_StateController_New.Ready_Input" interface="" source="Sensoraufbereitung.Ready_Output" />
+    <connection connection_priority="50" dest="HTWK_StateController_New.Emergency_Stop_Input" interface="" source="Base_Config.EmergencyStop" />
+   </graph>
+  </configuration>
+  <configuration description="" name="Sensoraufbereitung">
+   <graph>
+    <inport alias="Ultrasonic_Front_Left" />
+    <inport alias="Ultrasonic_Front_Center_Left" />
+    <inport alias="Ultrasonic_Front_Center" />
+    <inport alias="Ultrasonic_Front_Center_Right" />
+    <inport alias="Ultrasonic_Front_Right" />
+    <inport alias="Ultrasonic_Side_Left" />
+    <inport alias="Ultrasonic_Side_Right" />
+    <inport alias="Ultrasonic_Rear_Left" />
+    <inport alias="Ultrasonic_Rear_Center" />
+    <inport alias="Ultrasonic_Rear_Right" />
+    <inport alias="Voltage_Measurement" />
+    <inport alias="Voltage_SpeedCntrl" />
+    <inport alias="InerMeasUnit_Struct" />
+    <inport alias="WheelLeft_Struct" />
+    <filter alias="AADC_Converter_Wheels" idref="adtf.aadc.aadc_converterWheels" priority="1">
+     <settings />
+    </filter>
+    <inport alias="WheelRightStruct" />
+    <connection connection_priority="50" dest="AADC_Converter_Wheels.WheelLeft_Struct" interface="" source="WheelLeft_Struct" />
+    <connection connection_priority="50" dest="AADC_Converter_Wheels.WheelRight_Struct" interface="" source="WheelRightStruct" />
+    <filter alias="AADC_Converter_IMU" idref="adtf.aadc.aadc_converterIMU" priority="2">
+     <settings />
+    </filter>
+    <connection connection_priority="50" dest="AADC_Converter_IMU.InerMeasUnit_Struct" interface="" source="InerMeasUnit_Struct" />
+    <inport alias="Video_Depth_Input" />
+    <inport alias="Video_RGB_Input" />
+    <subgraph alias="LaneDetection" idref="LaneDetection" priority="3" />
+    <connection connection_priority="50" dest="LaneDetection.Video_RGB" interface="" source="Video_RGB_Input" />
+    <connection connection_priority="50" dest="LaneDetection.Video_Depth" interface="" source="Video_Depth_Input" />
+    <inport alias="CarState" />
+    <inport alias="Maneuver" />
+    <inport alias="Module_Reset" />
+    <connection connection_priority="50" dest="LaneDetection.Module_Reset" interface="" source="Module_Reset" />
+    <filter alias="HTWK_World_Filter_In" idref="htwk.world_filter_in" priority="993" />
+    <connection connection_priority="50" dest="HTWK_World_Filter_In.Lane_Input" interface="" source="LaneDetection.tLane" />
+    <connection connection_priority="50" dest="HTWK_World_Filter_In.Maneuver_Input" interface="" source="Maneuver" />
+    <filter alias="HTWK_Depth_Detection" idref="htwk.Depth_Detection" priority="3" />
+    <filter alias="HTWK_Ultra_Detection" idref="htwk.smart_driving.htwk_ultra_detection" priority="3" />
+    <filter alias="HTWK_Ultra_Median" idref="htwk.ultra_median" priority="6">
+     <settings>
+      <property name="active" type="Bool" value="true" />
+     </settings>
+    </filter>
+    <filter alias="HTWK_Image_Fusion_Reactor" idref="htwk.image_fusion_reactor" priority="3" />
+    <filter alias="HTWK_IMU_Merger" idref="htwk.ImuMerger" priority="8" />
+    <inport alias="Ultrasonic_Struct" />
+    <connection connection_priority="50" dest="HTWK_Ultra_Median.ultrasonicStruct_in" interface="" source="Ultrasonic_Struct" />
+    <connection connection_priority="50" dest="HTWK_Ultra_Detection.ultrasonicStruct" interface="" source="HTWK_Ultra_Median.ultrasonicStruct_out" />
+    <connection connection_priority="50" dest="HTWK_Image_Fusion_Reactor.First_Video_In" interface="" source="HTWK_Ultra_Detection.output_video" />
+    <connection connection_priority="50" dest="HTWK_World_Filter_In.Obstacle_Video_Input" interface="" source="HTWK_Image_Fusion_Reactor.Fusion_Video_Out" />
+    <connection connection_priority="50" dest="HTWK_World_Filter_In.CarState_Input" interface="" source="CarState" />
+    <connection connection_priority="50" dest="HTWK_IMU_Merger" interface="" source="AADC_Converter_IMU.yaw" />
+    <connection connection_priority="50" dest="HTWK_IMU_Merger" interface="" source="AADC_Converter_IMU.pitch" />
+    <connection connection_priority="50" dest="HTWK_IMU_Merger" interface="" source="AADC_Converter_IMU.roll" />
+    <connection connection_priority="50" dest="HTWK_IMU_Merger" interface="" source="AADC_Converter_IMU.accZ" />
+    <connection connection_priority="50" dest="HTWK_World_Filter_In.IMU_Input" interface="" source="HTWK_IMU_Merger.imu_struct" />
+    <connection connection_priority="50" dest="HTWK_Depth_Detection.Video_Input" interface="" source="Video_Depth_Input" />
+    <connection connection_priority="50" dest="HTWK_Image_Fusion_Reactor.Second_Video_In" interface="" source="HTWK_Depth_Detection.Video_Output" />
+    <connection connection_priority="50" dest="HTWK_World_Filter_In.CarState_Input" interface="" source="CarState" />
+    <filter alias="HTWK_Movement_Analyzer" idref="htwk.Movement_analyzer" priority="10" />
+    <connection connection_priority="50" dest="HTWK_Movement_Analyzer" interface="" source="AADC_Converter_Wheels.car_speed" />
+    <connection connection_priority="50" dest="HTWK_Movement_Analyzer.AccX" interface="" source="AADC_Converter_IMU.accX" />
+    <connection connection_priority="50" dest="HTWK_Movement_Analyzer.AccY" interface="" source="AADC_Converter_IMU.accY" />
+    <connection connection_priority="50" dest="HTWK_Movement_Analyzer" interface="" source="AADC_Converter_Wheels.distance_overall" />
+    <connection connection_priority="50" dest="HTWK_IMU_Merger.accX" interface="" source="HTWK_Movement_Analyzer.calc_AccX" />
+    <connection connection_priority="50" dest="HTWK_IMU_Merger.accY" interface="" source="HTWK_Movement_Analyzer.calc_AccY" />
+    <filter alias="HTWK_Marker_Detection" idref="htwk.markerDetection" priority="11">
+     <settings>
+      <property name="Calibration File for used Camera" type="String" value="../../../configuration_files/xtionIntrinsicCalib.yml" />
+      <property name="Dictionary File For Markers" type="String" value="../../../configuration_files/roadsign.yml" />
+      <property name="Video Output Pin" type="Int" value="2" />
+     </settings>
+    </filter>
+    <filter alias="HTWK_Marker_Evaluator" idref="htwk.markerEvaluator" priority="12" />
+    <connection connection_priority="50" dest="HTWK_World_Filter_In.CarSpeed_Input" interface="" source="HTWK_Movement_Analyzer.calc_car_speed" />
+    <connection connection_priority="50" dest="HTWK_Marker_Detection.Video_RGB_input" interface="" source="Video_RGB_Input" />
+    <connection connection_priority="50" dest="HTWK_Marker_Evaluator.RoadSignAnalysis_Input" interface="" source="HTWK_Marker_Detection.RoadSignAnalysis_Output" />
+    <connection connection_priority="50" dest="HTWK_World_Filter_In.RoadSign_Input" interface="" source="HTWK_Marker_Evaluator.Marker_Output" />
+    <connection connection_priority="50" dest="HTWK_World_Filter_In.NoPassing_Input" interface="" source="HTWK_Marker_Evaluator.NoOvertaking_Output" />
+    <connection connection_priority="50" dest="HTWK_World_Filter_In.RoadSignStruct_Input" interface="" source="HTWK_Marker_Detection.RoadSignAnalysis_Output" />
+    <connection connection_priority="50" dest="HTWK_Marker_Evaluator.Reset_Input" interface="" source="Module_Reset" />
+    <outport alias="Ready_Output" />
+    <connection connection_priority="50" dest="Ready_Output" interface="" source="HTWK_Marker_Evaluator.Ready_Output" />
+    <connection connection_priority="50" dest="Ready_Output" interface="" source="HTWK_Marker_Detection.Ready_Ouput" />
+    <connection connection_priority="50" dest="Ready_Output" interface="" source="LaneDetection.Module_Ready" />
+    <connection connection_priority="50" dest="HTWK_Marker_Detection.Reset_Input" interface="" source="Module_Reset" />
+    <connection connection_priority="50" dest="HTWK_World_Filter_In.DistanceOverall_Input" interface="" source="HTWK_Movement_Analyzer.calc_distance_overall" />
+    <connection connection_priority="50" dest="HTWK_World_Filter_In.Reset_Input" interface="" source="Module_Reset" />
+    <connection connection_priority="50" dest="HTWK_World_Filter_In.Ready_Input" interface="" source="HTWK_Marker_Detection.Ready_Ouput" />
+    <connection connection_priority="50" dest="HTWK_World_Filter_In.Ready_Input" interface="" source="HTWK_Marker_Evaluator.Ready_Output" />
+    <connection connection_priority="50" dest="HTWK_World_Filter_In.Ready_Input" interface="" source="LaneDetection.Module_Ready" />
+   </graph>
+  </configuration>
+  <configuration description="" name="Entscheidungsfindung">
+   <graph>
+    <outport alias="SteeringAngle" />
+    <filter alias="HTWK_Drive_Decision" idref="htwk.htwk_drive_decision" priority="988">
+     <settings>
+      <property name="Idle priority" type="Int" value="99" />
+     </settings>
+    </filter>
+    <outport alias="SteeringRadius" />
+    <connection connection_priority="50" dest="speed" interface="" source="HTWK_Drive_Decision.speed" />
+    <connection connection_priority="50" dest="SteeringRadius" interface="" source="HTWK_Drive_Decision.curveRadius" />
+    <connection connection_priority="50" dest="headLightEnabled" interface="" source="HTWK_Drive_Decision.headLightEnabled" />
+    <connection connection_priority="50" dest="turnSignalLeftEnabled" interface="" source="HTWK_Drive_Decision.turnSignalLeftEnabled" />
+    <connection connection_priority="50" dest="turnSignalRightEnabled" interface="" source="HTWK_Drive_Decision.turnSignalRightEnabled" />
+    <connection connection_priority="50" dest="hazzardLightsEnabled" interface="" source="HTWK_Drive_Decision.hazardLightEnabled" />
+    <connection connection_priority="50" dest="brakeLightEnabled" interface="" source="HTWK_Drive_Decision.brakeLightEnabled" />
+    <connection connection_priority="50" dest="reverseLightsEnabled" interface="" source="HTWK_Drive_Decision.reverseLightEnabled" />
+    <outport alias="Set_Error_State" />
+    <outport alias="Increment_Maneuver_ID" />
+    <connection connection_priority="50" dest="SteeringAngle" interface="" source="HTWK_Drive_Decision.curveAngle" />
+    <connection connection_priority="50" dest="Set_Error_State" interface="" source="HTWK_Drive_Decision.Set_Error_State" />
+    <connection connection_priority="50" dest="Increment_Maneuver_ID" interface="" source="HTWK_Drive_Decision.Increment_Maneuver_ID" />
+    <outport alias="Module_Reset" />
+    <connection connection_priority="50" dest="Module_Reset" interface="" source="HTWK_Drive_Decision.Module_Reset" />
+    <filter alias="HTWK_Pull_Out" idref="htwk.pull_out" priority="2">
+     <settings />
+    </filter>
+    <filter alias="HTWK_Trigger" idref="htwk.trigger" priority="1">
+     <settings>
+      <property name="Interval" type="Int" value="15" />
+     </settings>
+    </filter>
+    <filter alias="HTWK_Idle" idref="htwk.idle" priority="3" />
+    <filter alias="HTWK_Cross_Parking" idref="htwk.crossparking" priority="5">
+     <settings />
+    </filter>
+    <filter alias="HTWK_Parallel_Parking" idref="htwk.parallelparking" priority="6">
+     <settings />
+    </filter>
+    <connection connection_priority="50" dest="HTWK_Drive_Decision.Trigger" interface="" source="HTWK_Trigger.trigger" />
+    <connection connection_priority="50" dest="HTWK_Pull_Out.Trigger_Input" interface="" source="HTWK_Trigger.trigger" />
+    <connection connection_priority="50" dest="HTWK_Cross_Parking.Trigger_Input" interface="" source="HTWK_Trigger.trigger" />
+    <connection connection_priority="50" dest="HTWK_Turn.Trigger_Input" interface="" source="HTWK_Trigger.trigger" />
+    <connection connection_priority="50" dest="HTWK_Idle.Trigger_Input" interface="" source="HTWK_Trigger.trigger" />
+    <connection connection_priority="50" dest="HTWK_Lane_Driver.Trigger_Input" interface="" source="HTWK_Trigger.trigger" />
+    <connection connection_priority="50" dest="HTWK_Collision_Prevention.Trigger_Input" interface="" source="HTWK_Trigger.trigger" />
+    <connection connection_priority="50" dest="HTWK_Parallel_Parking.Trigger_Input" interface="" source="HTWK_Trigger.trigger" />
+    <connection connection_priority="50" dest="HTWK_Drive_Decision.drive_instructions_struct" interface="" source="HTWK_Pull_Out.DriveInstructions_Output" />
+    <connection connection_priority="50" dest="HTWK_Drive_Decision.drive_instructions_struct" interface="" source="HTWK_Lane_Driver.DriveInstructions_Output" />
+    <connection connection_priority="50" dest="HTWK_Drive_Decision.drive_instructions_struct" interface="" source="HTWK_Idle.DriveInstructions_Output" />
+    <connection connection_priority="50" dest="HTWK_Drive_Decision.drive_instructions_struct" interface="" source="HTWK_Turn.DriveInstructions_Output" />
+    <connection connection_priority="50" dest="HTWK_Drive_Decision.drive_instructions_struct" interface="" source="HTWK_Cross_Parking.DriveInstructions_Output" />
+    <connection connection_priority="50" dest="HTWK_Drive_Decision.drive_instructions_struct" interface="" source="HTWK_Collision_Prevention.DriveInstructions_Output" />
+    <connection connection_priority="50" dest="HTWK_Drive_Decision.drive_instructions_struct" interface="" source="HTWK_Parallel_Parking.DriveInstructions_Output" />
+    <filter alias="HTWK_Lane_Driver" idref="htwk.lane_driver" priority="7">
+     <settings />
+    </filter>
+    <filter alias="HTWK_Turn" idref="htwk.turn" priority="8">
+     <settings />
+    </filter>
+    <filter alias="HTWK_Collision_Prevention" idref="htwk.collision.prevention" priority="9" />
+    <filter alias="HTWK_Obstacle_Passing" idref="htwk.obstacle.passing" priority="4">
+     <settings />
+    </filter>
+    <connection connection_priority="50" dest="HTWK_Obstacle_Passing.Trigger_Input" interface="" source="HTWK_Trigger.trigger" />
+    <connection connection_priority="50" dest="HTWK_Drive_Decision.drive_instructions_struct" interface="" source="HTWK_Obstacle_Passing.DriveInstructions_Output" />
+   </graph>
+  </configuration>
+  <outport alias="brakeLightEnabled" />
+  <outport alias="speed" />
+  <outport alias="headLightEnabled" />
+  <outport alias="turnSignalRightEnabled" />
+  <outport alias="reverseLightsEnabled" />
+  <outport alias="turnSignalLeftEnabled" />
+  <outport alias="hazzardLightsEnabled" />
+  <configuration description="" name="Steering_Calibration">
+   <graph>
+    <filter alias="AADC_Steering_Calibration" idref="adtf.aadc.aadc_steeringCalibration" priority="2">
+     <settings />
+    </filter>
+    <filter alias="AADC_Converter_Wheels" idref="adtf.aadc.aadc_converterWheels" priority="3">
+     <settings />
+    </filter>
+    <filter alias="AADC_Converter_IMU" idref="adtf.aadc.aadc_converterIMU" priority="4">
+     <settings />
+    </filter>
+    <filter alias="AADC_Calibration_XML" idref="adtf.aadc.aadc_calibrationXML" priority="5">
+     <settings>
+      <property name="Configuration File For Interpolation" type="String" value="../../../configuration_files/SpeedController.xml" />
+     </settings>
+    </filter>
+    <subgraph alias="Base_Config" idref="Base_Config" priority="1" />
+    <connection connection_priority="50" dest="AADC_Converter_Wheels.WheelLeft_Struct" interface="" source="Base_Config.WheelLeft_Struct" />
+    <connection connection_priority="50" dest="AADC_Converter_Wheels.WheelRight_Struct" interface="" source="Base_Config.WheelRight_Struct" />
+    <connection connection_priority="50" dest="AADC_Steering_Calibration" interface="" source="AADC_Converter_Wheels.distance_overall" />
+    <connection connection_priority="50" dest="AADC_Converter_IMU.InerMeasUnit_Struct" interface="" source="Base_Config.InerMeasUnit_Struct" />
+    <connection connection_priority="50" dest="AADC_Steering_Calibration" interface="" source="AADC_Converter_IMU.yaw" />
+    <connection connection_priority="50" dest="Base_Config.SteeringController" interface="" source="AADC_Steering_Calibration.SteeringController" />
+    <filter alias="AADC_Watchdog_Trigger" idref="adtf.aadc.watchdogTrigger" priority="6">
+     <settings />
+    </filter>
+    <connection connection_priority="50" dest="Base_Config.Watchdog_Alive_Flag" interface="" source="AADC_Watchdog_Trigger.WatchdogAliveSignal" />
+    <connection connection_priority="50" dest="Base_Config.SpeedController" interface="" source="AADC_Calibration_XML.output_value" />
+   </graph>
+  </configuration>
+  <configuration description="" name="Speed_Calibration">
+   <graph>
+    <filter alias="AADC_Watchdog_Trigger" idref="adtf.aadc.watchdogTrigger" priority="1">
+     <settings />
+    </filter>
+    <filter alias="AADC_Visualization" idref="adtf.aadc.aadc_visualization" priority="2">
+     <settings />
+    </filter>
+    <filter alias="AADC_Converter_Wheels" idref="adtf.aadc.aadc_converterWheels" priority="3">
+     <settings />
+    </filter>
+    <filter alias="AADC_Signal_Value_Generator" idref="adtf.aadc.aadc_signalValueGenerator" priority="4">
+     <settings>
+      <property name="Default Value 1" type="Float" value="55.0" />
+      <property name="Default Value 2" type="Float" value="55.0" />
+     </settings>
+    </filter>
+    <subgraph alias="Base_Config" idref="Base_Config" priority="1" />
+    <connection connection_priority="50" dest="Base_Config.Watchdog_Alive_Flag" interface="" source="AADC_Watchdog_Trigger.WatchdogAliveSignal" />
+    <connection connection_priority="50" dest="AADC_Converter_Wheels.WheelLeft_Struct" interface="" source="Base_Config.WheelLeft_Struct" />
+    <connection connection_priority="50" dest="AADC_Converter_Wheels.WheelRight_Struct" interface="" source="Base_Config.WheelRight_Struct" />
+    <filter alias="AADC_Calibration_XML" idref="adtf.aadc.aadc_calibrationXML" priority="5">
+     <settings>
+      <property name="Configuration File For Interpolation" type="String" value="../../../configuration_files/SpeedController.xml" />
+     </settings>
+    </filter>
+    <connection connection_priority="50" dest="AADC_Calibration_XML.input_value" interface="" source="AADC_Converter_Wheels.car_speed" />
+    <connection connection_priority="50" dest="AADC_Visualization.Ultrasonic_Front_Left" interface="" source="AADC_Calibration_XML.output_value" />
+    <connection connection_priority="50" dest="Base_Config.SpeedController" interface="" source="AADC_Signal_Value_Generator.Value_1" />
+   </graph>
+  </configuration>
+  <configuration description="" name="RegionOfInterest">
+   <graph>
+    <filter alias="HTWK_Grayscale" idref="htwk.grayscale" priority="1" />
+    <inport alias="Video_RGB_In" />
+    <inport alias="Video_Depth_In" />
+    <outport alias="Video_RGB_Out" />
+    <outport alias="Video_Depth_Out" />
+    <connection connection_priority="50" dest="HTWK_Grayscale.Video_Input" interface="" source="Video_Depth_In" />
+    <connection connection_priority="50" dest="HTWK_Region_of_Interest.Video_RGB_In" interface="" source="Video_RGB_In" />
+    <connection connection_priority="50" dest="Video_RGB_Out" interface="" source="HTWK_Region_of_Interest.Video_RGB_Out" />
+    <connection connection_priority="50" dest="Video_Depth_Out" interface="" source="HTWK_Region_of_Interest.Grayscale_Video_Depth_Out" />
+    <filter alias="HTWK_Region_of_Interest" idref="htwk.roi" priority="2">
+     <settings>
+      <property name="Room height manipulation" type="Float" value="0.75" />
+     </settings>
+    </filter>
+    <outport alias="Rect_RGB_Out" />
+    <outport alias="Rect_Depth_out" />
+    <connection connection_priority="50" dest="Rect_RGB_Out" interface="" source="HTWK_Region_of_Interest.Rect_RGB_Out" />
+    <connection connection_priority="50" dest="Rect_Depth_out" interface="" source="HTWK_Region_of_Interest.Rect_Depth_Out" />
+    <connection connection_priority="50" dest="HTWK_Region_of_Interest.Grayscale_Video_Depth_In" interface="" source="HTWK_Grayscale.Grayscale_Video_Output" />
+   </graph>
+  </configuration>
+  <configuration description="" name="LaneDetection">
+   <graph>
+    <subgraph alias="RegionOfInterest" idref="RegionOfInterest" priority="1" />
+    <inport alias="Video_RGB" />
+    <inport alias="Video_Depth" />
+    <outport alias="tLane" />
+    <connection connection_priority="50" dest="RegionOfInterest.Video_RGB_In" interface="" source="Video_RGB" />
+    <connection connection_priority="50" dest="RegionOfInterest.Video_Depth_In" interface="" source="Video_Depth" />
+    <connection connection_priority="50" dest="HTWK_IPM.Video_RGB_input" interface="" source="Video_RGB" />
+    <connection connection_priority="50" dest="HTWK_IPM.ROI_Rect_input" interface="" source="RegionOfInterest.Rect_RGB_Out" />
+    <inport alias="Module_Reset" />
+    <filter alias="HTWK_IPM" idref="htwk.ipm" priority="2">
+     <settings>
+      <property name="VP_X" type="Float" value="314.0" />
+      <property name="VP_Y" type="Float" value="136.0" />
+     </settings>
+    </filter>
+    <filter alias="HTWK_Lane_Detection" idref="htwk.lane_detection" priority="3" />
+    <outport alias="Module_Ready" />
+    <connection connection_priority="50" dest="HTWK_Lane_Detection.Reset_input" interface="" source="Module_Reset" />
+    <connection connection_priority="50" dest="HTWK_Lane_Detection.IPM_Ready_input" interface="" source="HTWK_IPM.Ready_output" />
+    <connection connection_priority="50" dest="HTWK_Lane_Detection.Video_IPM_input" interface="" source="HTWK_IPM.Video_IPM_output" />
+    <connection connection_priority="50" dest="tLane" interface="" source="HTWK_Lane_Detection.Lane_output" />
+    <connection connection_priority="50" dest="Module_Ready" interface="" source="HTWK_IPM.Ready_output" />
+    <connection connection_priority="50" dest="Module_Ready" interface="" source="HTWK_Lane_Detection.Ready_output" />
+    <connection connection_priority="50" dest="HTWK_IPM.Get_Ready_Input" interface="" source="Module_Reset" />
+   </graph>
+  </configuration>
+  <configuration description="" name="TemplateImages">
+   <graph>
+    <filter alias="AADC_Xtion_Camera" idref="adtf.aadc.aadc_xtionCamera" priority="4">
+     <settings>
+      <property name="Configuration File" type="String" value="../../../configuration_files/xtionSettings.xml" />
+     </settings>
+    </filter>
+    <filter alias="HTWK_IPM" idref="htwk.ipm" priority="3" />
+    <filter alias="Harddisk_Recorder" idref="adtf.stg.harddisk_recorder" priority="5">
+     <settings>
+      <property name="filename" type="String" value="/home/aadc/Desktop/templateImages.dat" />
+      <property name="start_on_startup" type="Bool" value="true" />
+     </settings>
+    </filter>
+    <subgraph alias="RegionOfInterest" idref="RegionOfInterest" priority="2" />
+    <connection connection_priority="50" dest="RegionOfInterest.Video_RGB_In" interface="" source="AADC_Xtion_Camera.Video_RGB" />
+    <connection connection_priority="50" dest="RegionOfInterest.Video_Depth_In" interface="" source="AADC_Xtion_Camera.Depth_Image" />
+    <connection connection_priority="50" dest="HTWK_IPM.Video_RGB_input" interface="" source="AADC_Xtion_Camera.Video_RGB" />
+    <connection connection_priority="50" dest="HTWK_IPM.ROI_Rect_input" interface="" source="RegionOfInterest.Rect_RGB_Out" />
+    <filter alias="HTWK_Lane_Detection" idref="htwk.lane_detection" priority="5" />
+    <connection connection_priority="50" dest="HTWK_Lane_Detection.Video_IPM_input" interface="" source="HTWK_IPM.Video_IPM_output" />
+    <connection connection_priority="50" dest="Harddisk_Recorder.Video_IPM_output" interface="" source="HTWK_Lane_Detection.Debug_Video_output" />
+    <connection connection_priority="50" dest="HTWK_Lane_Detection.IPM_Ready_input" interface="" source="HTWK_IPM.Ready_output" />
+    <filter alias="Video_Display" idref="adtf.visual.video_display" priority="6" />
+    <connection connection_priority="50" dest="Video_Display.input" interface="" source="HTWK_Lane_Detection.Debug_Video_output" />
+   </graph>
+  </configuration>
+ </configurations>
+ <fileinfo adtfversion="2.13.2" configversion="1.3" />
+ <configuration_settings />
+ <adtf_include source="../../BaseConfig/IncludeConfig.xml" />
+ <plugins>
+  <plugin optional="true" url="../../../bin/Linux/gcc/*.plb" />
+  <plugin optional="true" url="../../../../../bin/Linux/gcc/*.plb" />
+  <plugin optional="true" url="../../../bin/filter/*.plb" />
+ </plugins>
+</adtf:project>

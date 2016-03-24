@@ -1,0 +1,7 @@
+<adtf:export xmlns:adtf="adtf">
+ <folder name="Base_Config">
+  <folder name="components">
+   <folder name="FilterTraceView" />
+  </folder>
+ </folder>
+</adtf:export>

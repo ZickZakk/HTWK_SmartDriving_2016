@@ -1,0 +1,2 @@
+add_subdirectory(demo_client)
+add_subdirectory(demo_server)

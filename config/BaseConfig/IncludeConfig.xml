@@ -1,0 +1,123 @@
+<adtf:include xmlns:adtf="adtf">
+ <configuration description="" name="Base_Config" url="tcp://localhost:5000">
+  <graph>
+   <inport alias="brakeLightEnabled" />
+   <inport alias="SpeedController" />
+   <inport alias="headLightEnabled" />
+   <inport alias="SteeringController" />
+   <inport alias="Watchdog_Alive_Flag" />
+   <inport alias="turnSignalRightEnabled" />
+   <inport alias="reverseLightsEnabled" />
+   <inport alias="turnSignalLeftEnabled" />
+   <inport alias="Driver_Struct" />
+   <outport alias="Jury_Struct" />
+   <subgraph alias="Jury_Config" idref="Jury_Config" priority="8" url="tcp://localhost:5000" />
+   <connection connection_priority="50" dest="Jury_Config.Driver_Struct_raw" interface="" source="Driver_Struct" />
+   <connection connection_priority="50" dest="Jury_Struct" interface="" source="Jury_Config.Jury_Struct_raw" />
+   <connection connection_priority="50" dest="Jury_Config.Jury_Struct_Loopback_raw" interface="" source="Jury_Config.Jury_Struct_raw" />
+   <connection connection_priority="50" dest="Jury_Config.Emergency_Stop_Loopback_raw" interface="" source="Jury_Config.Emergency_Stop_raw" />
+   <inport alias="hazzardLightsEnabled" />
+   <filter alias="AADC_Arduino_Communication" idref="adtf.aadc.arduinoCommunication" priority="2">
+    <settings>
+     <property name="COM Port" type="String" value="/dev/ttyACM0" />
+     <property name="active" type="Bool" value="true" />
+    </settings>
+   </filter>
+   <filter alias="AADC_Arduino_Communication2" idref="adtf.aadc.arduinoCommunication" priority="3">
+    <settings>
+     <property name="COM Port" type="String" value="/dev/ttyACM1" />
+     <property name="active" type="Bool" value="true" />
+    </settings>
+   </filter>
+   <filter alias="AADC_Arduino_Communication3" idref="adtf.aadc.arduinoCommunication" priority="4">
+    <settings>
+     <property name="COM Port" type="String" value="/dev/ttyACM2" />
+     <property name="active" type="Bool" value="true" />
+    </settings>
+   </filter>
+   <filter alias="AADC_Arduino_Communication4" idref="adtf.aadc.arduinoCommunication" priority="5">
+    <settings>
+     <property name="COM Port" type="String" value="/dev/ttyACM3" />
+     <property name="active" type="Bool" value="true" />
+    </settings>
+   </filter>
+   <filter alias="AADC_Arduino_Actuators" idref="adtf.aadc.arduinoActuators" priority="6">
+    <settings />
+   </filter>
+   <inport alias="Emergency_Stop" />
+   <outport alias="Ultrasonic_Front_Left" />
+   <outport alias="Ultrasonic_Front_Center_Left" />
+   <outport alias="Ultrasonic_Front_Center" />
+   <outport alias="Ultrasonic_Front_Center_Right" />
+   <outport alias="Ultrasonic_Front_Right" />
+   <outport alias="Ultrasonic_Side_Left" />
+   <outport alias="Ultrasonic_Side_Right" />
+   <outport alias="Ultrasonic_Rear_Left" />
+   <outport alias="Ultrasonic_Rear_Center" />
+   <outport alias="Ultrasonic_Rear_Right" />
+   <outport alias="Voltage_Measurement" />
+   <outport alias="Voltage_SpeedCntrl" />
+   <connection connection_priority="50" dest="AADC_Arduino_Communication.COM_input" interface="" source="AADC_Arduino_Actuators.ArduinoCOM_output" />
+   <connection connection_priority="50" dest="AADC_Arduino_Communication2.COM_input" interface="" source="AADC_Arduino_Actuators.ArduinoCOM_output" />
+   <connection connection_priority="50" dest="AADC_Arduino_Communication3.COM_input" interface="" source="AADC_Arduino_Actuators.ArduinoCOM_output" />
+   <connection connection_priority="50" dest="AADC_Arduino_Communication4.COM_input" interface="" source="AADC_Arduino_Actuators.ArduinoCOM_output" />
+   <connection connection_priority="50" dest="AADC_Arduino_Sensors.ArduinoCOM_input" interface="" source="AADC_Arduino_Communication.COM_output" />
+   <connection connection_priority="50" dest="AADC_Arduino_Sensors.ArduinoCOM_input" interface="" source="AADC_Arduino_Communication2.COM_output" />
+   <connection connection_priority="50" dest="AADC_Arduino_Sensors.ArduinoCOM_input" interface="" source="AADC_Arduino_Communication3.COM_output" />
+   <connection connection_priority="50" dest="AADC_Arduino_Sensors.ArduinoCOM_input" interface="" source="AADC_Arduino_Communication4.COM_output" />
+   <connection connection_priority="50" dest="AADC_Arduino_Actuators.hazzardLightsEnabled" interface="" source="hazzardLightsEnabled" />
+   <connection connection_priority="50" dest="AADC_Arduino_Actuators.headLightEnabled" interface="" source="headLightEnabled" />
+   <connection connection_priority="50" dest="AADC_Arduino_Actuators.turnSignalLeftEnabled" interface="" source="turnSignalLeftEnabled" />
+   <connection connection_priority="50" dest="AADC_Arduino_Actuators.turnSignalRightEnabled" interface="" source="turnSignalRightEnabled" />
+   <connection connection_priority="50" dest="AADC_Arduino_Actuators.brakeLightEnabled" interface="" source="brakeLightEnabled" />
+   <connection connection_priority="50" dest="AADC_Arduino_Actuators.reverseLightsEnabled" interface="" source="reverseLightsEnabled" />
+   <connection connection_priority="50" dest="AADC_Arduino_Actuators.SpeedController" interface="" source="SpeedController" />
+   <connection connection_priority="50" dest="AADC_Arduino_Actuators.SteeringController" interface="" source="SteeringController" />
+   <connection connection_priority="50" dest="AADC_Arduino_Actuators.Watchdog_Alive_Flag" interface="" source="Watchdog_Alive_Flag" />
+   <connection connection_priority="50" dest="AADC_Arduino_Actuators.Emergency_Stop" interface="" source="Emergency_Stop" />
+   <connection connection_priority="50" dest="Ultrasonic_Front_Left" interface="" source="AADC_Arduino_Sensors.Ultrasonic_Front_Left" />
+   <connection connection_priority="50" dest="Ultrasonic_Front_Center_Left" interface="" source="AADC_Arduino_Sensors.Ultrasonic_Front_Center_Left" />
+   <connection connection_priority="50" dest="Ultrasonic_Front_Center" interface="" source="AADC_Arduino_Sensors.Ultrasonic_Front_Center" />
+   <connection connection_priority="50" dest="Ultrasonic_Front_Center_Right" interface="" source="AADC_Arduino_Sensors.Ultrasonic_Front_Center_Right" />
+   <connection connection_priority="50" dest="Ultrasonic_Front_Right" interface="" source="AADC_Arduino_Sensors.Ultrasonic_Front_Right" />
+   <connection connection_priority="50" dest="Ultrasonic_Side_Left" interface="" source="AADC_Arduino_Sensors.Ultrasonic_Side_Left" />
+   <connection connection_priority="50" dest="Ultrasonic_Side_Right" interface="" source="AADC_Arduino_Sensors.Ultrasonic_Side_Right" />
+   <connection connection_priority="50" dest="Ultrasonic_Rear_Left" interface="" source="AADC_Arduino_Sensors.Ultrasonic_Rear_Left" />
+   <connection connection_priority="50" dest="Ultrasonic_Rear_Center" interface="" source="AADC_Arduino_Sensors.Ultrasonic_Rear_Center" />
+   <connection connection_priority="50" dest="Ultrasonic_Rear_Right" interface="" source="AADC_Arduino_Sensors.Ultrasonic_Rear_Right" />
+   <outport alias="InerMeasUnit_Struct" />
+   <outport alias="WheelLeft_Struct" />
+   <outport alias="WheelRight_Struct" />
+   <connection connection_priority="50" dest="Voltage_Measurement" interface="" source="AADC_Arduino_Sensors.Voltage_Measurement" />
+   <connection connection_priority="50" dest="Voltage_SpeedCntrl" interface="" source="AADC_Arduino_Sensors.Voltage_SpeedCntrl" />
+   <connection connection_priority="50" dest="InerMeasUnit_Struct" interface="" source="AADC_Arduino_Sensors.InerMeasUnit_Struct" />
+   <connection connection_priority="50" dest="WheelLeft_Struct" interface="" source="AADC_Arduino_Sensors.WheelLeft_Struct" />
+   <connection connection_priority="50" dest="WheelRight_Struct" interface="" source="AADC_Arduino_Sensors.WheelRight_Struct" />
+   <outport alias="SteeringController_backup" />
+   <connection connection_priority="50" dest="SteeringController_backup" interface="" source="SteeringController" />
+   <filter alias="AADC_Arduino_Sensors" idref="adtf.aadc.arduinoSensors" priority="7">
+    <settings />
+   </filter>
+   <outport alias="Ultrasonic_Struct" />
+   <connection connection_priority="50" dest="Ultrasonic_Struct" interface="" source="AADC_Arduino_Sensors.Ultrasonic" />
+   <connection connection_priority="50" dest="AADC_Arduino_Actuators.Emergency_Stop" interface="" source="Jury_Config.Emergency_Stop_raw" />
+   <outport alias="Jury_ManeuverList" />
+   <connection connection_priority="50" dest="Jury_Config.Jury_ManeuverList_Loopback_raw" interface="" source="Jury_Config.Jury_ManeuverList_raw" />
+   <connection connection_priority="50" dest="Jury_Config.Emergency_Stop_Loopback_raw" interface="" source="Emergency_Stop" />
+   <connection connection_priority="50" dest="Jury_ManeuverList" interface="" source="Jury_Config.Jury_ManeuverList_raw" />
+   <outport alias="EmergencyStop" />
+   <connection connection_priority="50" dest="EmergencyStop" interface="" source="Jury_Config.Emergency_Stop_raw" />
+  </graph>
+ </configuration>
+ <configuration description="" name="Jury_Config">
+  <graph>
+   <inport alias="Driver_Struct_raw" stream="stream_tDriverStruct" />
+   <outport alias="Emergency_Stop_raw" stream="stream_tJuryEmergencyStop" />
+   <outport alias="Jury_Struct_raw" stream="stream_tJuryStruct" />
+   <inport alias="Jury_Struct_Loopback_raw" stream="stream_tJuryStruct" />
+   <inport alias="Emergency_Stop_Loopback_raw" stream="stream_tJuryEmergencyStop" />
+   <inport alias="Jury_ManeuverList_Loopback_raw" stream="stream_tManeuverList" />
+   <outport alias="Jury_ManeuverList_raw" stream="stream_tManeuverList" />
+  </graph>
+ </configuration>
+</adtf:include>

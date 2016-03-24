@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<adtf:plugin xmlns:adtf="adtf">
+ <classes>
+  <class Name="adtf.example.demo_dynamic_server" Type="iid.adtf_filter">
+   <Description Value="Take look at the ADTF Documentation." />
+   <Bindings>
+    <BindingObject Direction="2" Name="" iid="adtf.demoiid_published_interface" oid="" ShortDescription="">
+    </BindingObject>
+   </Bindings>
+   <Pins>
+    <Pin Direction="2" MajorType="0" Name="I32" SubType="0" Threading="timer">
+     <Description Value="Pin Description." />
+    </Pin>
+    <Pin Direction="2" MajorType="0" Name="STRUCT" SubType="0" Threading="timer">
+     <Description Value="Pin Description." />
+    </Pin>
+   </Pins>
+  </class>
+ </classes>
+ <fileinfo adtfversion="2.13.0" version="1.0" />
+</adtf:plugin>

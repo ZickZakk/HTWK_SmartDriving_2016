@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<carconfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <collisionprevention>
+        <speedFactor type="float">5.0</speedFactor>
+        <followZone type="int">50</followZone>
+        <followEnable type="bool">0</followEnable>
+    </collisionprevention>
+    <lanedriver>
+        <carWidth type="float">15</carWidth>
+        <maxEndDisplacement type="float">400</maxEndDisplacement>
+        <maxStartDisplacement type="float">20</maxStartDisplacement>
+        <laneWidth type="float">45</laneWidth>
+        <safetySpace type="float">8</safetySpace>
+        <straightSpeed type="float">1.5</straightSpeed>
+        <curveSpeed type="float">1.5</curveSpeed>
+        <useLeft type="bool">1</useLeft>
+        <useRight type="bool">1</useRight>
+    </lanedriver>
+    <passing>
+        <activationSpeed type="float">0.2</activationSpeed>
+        <waitTime type="float">5</waitTime>
+        <midAngle type="float">41</midAngle>
+        <distanceNextObstacle type="float">0.1</distanceNextObstacle>
+        <passingSpeed type="float">1.6</passingSpeed>
+        <reverseDistance type="float">0.25</reverseDistance>
+        <sideDistance type="float">0.3</sideDistance>
+        <frontDistance type="float">0.6</frontDistance>
+        <useLane type="bool">1</useLane>
+        <laneSafetySpace type="float">0</laneSafetySpace>
+    </passing>
+    <turn>
+        <turnSpeed type="float">1.6</turnSpeed>
+        <nearingSpeed type="float">1.3</nearingSpeed>
+
+        <leftTurnRadius type="float">1.25</leftTurnRadius>
+        <leftTurnAngle type="int">85</leftTurnAngle>
+        <rightTurnRadius type="float">1</rightTurnRadius>
+        <rightTurnAngle type="int">85</rightTurnAngle>
+
+        <signSizeSlowDown type="int">200</signSizeSlowDown>
+        <signSizeStop type="int">700</signSizeStop>
+    </turn>
+    <pullout>
+        <cross_ForwardDistance type="float">0.2</cross_ForwardDistance>
+        <cross_TurnLeftRadius type="float">1.25</cross_TurnLeftRadius>
+        <cross_TurnLeftAngle type="int">85</cross_TurnLeftAngle>
+        <cross_TurnRightRadius type="float">1</cross_TurnRightRadius>
+        <cross_TurnRightAngle type="int">90</cross_TurnRightAngle>
+
+        <parallel_ForwardLeftAngle type="int">40</parallel_ForwardLeftAngle>
+        <parallel_ForwardLeftRadius type="float">0.8</parallel_ForwardLeftRadius>
+        <parallel_ForwardRightAngle type="int">30</parallel_ForwardRightAngle>
+        <parallel_ForwardRightRadius type="float">0.8</parallel_ForwardRightRadius>
+        <parallel_CarRearDistance type="float">0.12</parallel_CarRearDistance>
+
+        <isCrossBackWardLeftActive type="bool">1</isCrossBackWardLeftActive>
+        <skipcross_RightForward type="bool">1</skipcross_RightForward>
+
+        <!-- Base Properties -->
+        <driveSpeed type="float">1.2</driveSpeed>
+        <reverseDriveSpeed type="float">1.5</reverseDriveSpeed>
+        <turnSpeed type="float">1.5</turnSpeed>
+        <straightDriveOffset type="float">0.08</straightDriveOffset>
+        <straightDriveRadius type="float">2.5</straightDriveRadius>
+        <waitTime type="int">3</waitTime>
+        <ultrasonicSamples type="int">15</ultrasonicSamples>
+    </pullout>
+    <crossparking>
+        <straightBackwardDistance type="float">0.45</straightBackwardDistance>
+
+        <swingAngle type="int">20</swingAngle>
+        <swingRadius type="float">1</swingRadius>
+        <turnAngle type="int">60</turnAngle>
+        <turnRadius type="float">1</turnRadius>
+
+        <parkingDistance type="float">0.075</parkingDistance>
+        <rearFreeDistanceParking type="float">0.4</rearFreeDistanceParking>
+
+        <sideRecognitionDistance type="float">0.3</sideRecognitionDistance>
+        <parkingLotSize type="float">0.5</parkingLotSize>
+
+        <!-- Base Properties -->
+        <driveSpeed type="float">1.3</driveSpeed>
+        <reverseDriveSpeed type="float">1.7</reverseDriveSpeed>
+        <turnSpeed type="float">1.7</turnSpeed>
+        <straightDriveOffset type="float">0.08</straightDriveOffset>
+        <straightDriveRadius type="float">2.5</straightDriveRadius>
+        <waitTime type="int">5</waitTime>
+        <ultrasonicSamples type="int">15</ultrasonicSamples>
+    </crossparking>
+    <parallelparking>
+        <straightForwardDistance type="float">0.15</straightForwardDistance>
+
+        <turnBackRightAngle type="int">35</turnBackRightAngle>
+        <turnBackRightRadius type="float">1</turnBackRightRadius>
+
+        <turnBackLeftAngle type="int">30</turnBackLeftAngle>
+        <turnBackLeftRadius type="float">1</turnBackLeftRadius>
+        <turnBackLeftRearDistance type="float">0.13</turnBackLeftRearDistance>
+
+        <turnForwardRightAngle type="int">10</turnForwardRightAngle>
+        <turnForwardRightRadius type="float">1</turnForwardRightRadius>
+        <turnForwardRightFrontDistance type="float">0.13</turnForwardRightFrontDistance>
+
+        <backwardInLotRearDistance type="float">0.17</backwardInLotRearDistance>
+        <backwardInLotDriveDistance type="float">0.15</backwardInLotDriveDistance>
+
+        <sideRecognitionDistance type="float">0.25</sideRecognitionDistance>
+        <parkingLotSize type="float">0.7</parkingLotSize>
+
+        <!-- Base Properties -->
+        <driveSpeed type="float">1.3</driveSpeed>
+        <reverseDriveSpeed type="float">1.5</reverseDriveSpeed>
+        <turnSpeed type="float">1.7</turnSpeed>
+        <straightDriveOffset type="float">0.08</straightDriveOffset>
+        <straightDriveRadius type="float">2.5</straightDriveRadius>
+        <waitTime type="int">5</waitTime>
+        <ultrasonicSamples type="int">15</ultrasonicSamples>
+    </parallelparking>
+</carconfig>

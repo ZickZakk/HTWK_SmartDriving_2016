@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<!-- <!DOCTYPE adtf:manifest SYSTEM "manifest.dtd"> -->
+<adtf:manifest xmlns:adtf="adtf">
+
+    <info>
+        <brief>ADTF Development Environment (DEBUG)</brief>
+        <detailed>ADTF Development Environment (DEBUG)</detailed>
+        <support>
+            <info></info>
+            <email></email>
+            <licenseemail></licenseemail>
+            <phone></phone>
+        </support>
+    </info>
+
+    <environment>
+        <variable name="QT_PLUGIN_PATH" value="" />
+    </environment>
+
+    <dependencies>
+        <platform name="linux">
+            <library url="$(APPDIR)/../libQtCore.so"/>
+            <library url="$(APPDIR)/../libQtGui.so"/>
+            <library url="$(APPDIR)/../libQtXml.so"/>
+            <library url="$(APPDIR)/../libQtOpenGL.so"/>
+        </platform>
+    </dependencies>
+
+    <plugins>
+        <plugin url="adtf_clock.srv" />
+        <plugin url="adtf_console.srv" />
+        <plugin url="adtf_console_logger.srv" />
+        <plugin url="adtf_profiling.srv" />
+        <plugin url="adtf_kernel.srv" />
+        <plugin url="adtf_namespace.srv"/>
+        <plugin url="adtf_memory.srv"  />
+        <plugin url="adtf_session.srv" />
+        <plugin url="adtf_xsystem.srv" />
+        <plugin url="adtf_media_description.srv" />
+        <plugin url="adtf_sample_pool.srv" />
+        <plugin url="adtf_filtergraph_manager.srv" />
+        <plugin url="adtf_datexporter.srv" />
+        <plugin url="adtf_data_exchange.srv" />
+        <plugin url="adtf_debugging.srv" />
+        <plugin url="adtf_console_view.srv" />
+        <plugin url="adtf_filtertrace_view.srv" />
+        <plugin url="adtf_transport_ctrl.srv"/>
+        <plugin url="adtf_configuration_editor.srv" />
+        <plugin url="adtf_property_browser.srv"/>
+        <plugin url="adtf_component_tree.srv"/>
+        <plugin url="adtf_settings_editor.srv"/>
+        <plugin url="adtf_project_tree.srv" />
+        <plugin url="adtf_datexporter_ui.srv" />
+        <plugin url="adtf_python.srv" optional="true"/>
+        <plugin url="adtf_kernelinfo_view.srv" />
+        <plugin url="adtf_resource_view.srv" />
+        <plugin url="adtf_signal_view_registry.srv" optional="true"/>
+        <plugin url="adtf_extended_data.srv" optional="true"/>
+        <plugin url="adtf_loaded_modules.srv" optional="true"/>
+        <plugin url="adtf_profiling_ui.srv" optional="true"/>
+        <plugin url="adtf_debugging_ui.srv" optional="true"/>
+        <plugin url="adtf_media_desc_editor.srv" optional="true"/>
+        <plugin url="adtf_watchdog.srv" />
+        <plugin url="adtf_watchdog_ui.srv" />
+        <plugin url="adtf_extensions_editor_eds.srv" />
+        <plugin url="adtf_extensions_editor_referenced_files.srv" />
+
+        <!-- this is an optional debug plugin-->
+        <plugin url="adtf_namespace_tree.srv" optional="true"/>
+        
+        <!-- HTWK -->
+        <plugin url="htwk_world_service.srv" />
+
+    </plugins>
+
+    <services>
+        <!--ADTF main time-->
+        <service alias="" objectid="adtf.core.reference_clock" interfaceid="iid.reference_clock" runlevel="kernel" />
+        <service alias="" objectid="adtf.core.profiling"       interfaceid="iid.profiling"       runlevel="kernel" />
+
+        <!--ADTF core services-->
+        <service alias="" objectid="adtf.core.namespace"            interfaceid="iid.namespace"         runlevel="system" />
+        <service alias="" objectid="adtf.core.application"          interfaceid="iid.xapplication"      runlevel="system" />
+        <service alias="" objectid="adtf.core.kernel"               interfaceid="iid.kernel"            runlevel="system" />
+        <service alias="" objectid="adtf.core.memory_manager"       interfaceid="iid.memory_manager"    runlevel="system" />
+        <service alias="" objectid="adtf.core.mediadescription_manager" interfaceid="iid.media_description_manager" runlevel="system" />
+        <service alias="" objectid="adtf.core.sample_pool"          interfaceid="iid.sample_pool"       runlevel="system" />
+        <service alias="" objectid="ucom.core.console_device"       interfaceid="iid.console_device"    runlevel="system" />
+        <service alias="" objectid="adtf.core.console_logger"           interfaceid="iid.service"                    runlevel="system" />
+        <service alias="" objectid="adtf.core.session_manager"      interfaceid="iid.session_manager"   runlevel="system" />
+        <service alias="" objectid="adtf.core.debugging"            interfaceid="iid.debugging"         runlevel="system" />
+        <service alias="" objectid="adtf.core.filtergraph_manager"  interfaceid="iid.filtergraph"       runlevel="system" />
+        <service alias="" objectid="adtf.core.dat_exporter"         interfaceid="iid.dat_exporter"      runlevel="system" />
+        <service alias="" objectid="adtf.core.message_bus"          interfaceid="iid.adtf_message_bus"  runlevel="system" />
+        <service alias="" objectid="adtf.core.python_support"       interfaceid="iid.python_support"    runlevel="system" optional="true" />
+        <service alias="" objectid="adtf.core.extended_data"        interfaceid="iid.adtf_extended_data_manager" runlevel="system" optional="true"/>        
+        <service alias="" objectid="adtf.core.watchdog"             interfaceid="iid.service"           runlevel="system" />
+
+        <!--GUI Control Service-->
+        <service alias="" objectid="adtf.ui.transport_ctrl"         interfaceid="iid.service" runlevel="xsystem" />
+
+        <!--Visual Services-->
+        <service alias="" objectid="adtf.ui.project_tree"           interfaceid="iid.service" runlevel="xsystem" />
+        <service alias="" objectid="adtf.ui.filtertrace_view"       interfaceid="iid.service" runlevel="xsystem" />
+        <service alias="" objectid="adtf.ui.console_view"           interfaceid="iid.service" runlevel="xsystem" />
+        <service alias="" objectid="adtf.ui.loaded_modules"         interfaceid="iid.service" runlevel="xsystem" />
+        <service alias="" objectid="adft.ui.kernelinfo_view"        interfaceid="iid.service" runlevel="xsystem" />
+        <service alias="" objectid="adtf.ui.resource_view"          interfaceid="iid.service" runlevel="xsystem" />
+
+        <!--Configuration Services (only available with developing license) -->
+        <service alias="" objectid="adtf.ui.configuration_editor"   interfaceid="iid.service" runlevel="xsystem" />
+        <service alias="" objectid="adtf.ui.property_browser"       interfaceid="iid.service" runlevel="xsystem" />
+        <service alias="" objectid="adtf.ui.component_tree"         interfaceid="iid.service" runlevel="xsystem" />
+        <service alias="" objectid="adtf.ui.settings_editor"        interfaceid="iid.service" runlevel="xsystem" />
+
+        <!-- this is a optional debug service-->
+        <service alias="" objectid="adtf.ui.namespace_tree"         interfaceid="iid.service" runlevel="xsystem" />
+
+        <!--Tool Services -->
+        <service alias="" objectid="adtf.ui.dat_exporter"           interfaceid="iid.service"           runlevel="xsystem" />
+        <service alias="" objectid="adtf.core.signal_registry"      interfaceid="iid.signal_registry"   runlevel="xsystem" optional="true" />
+        <service alias="" objectid="adft.ui.profiling"              interfaceid="iid.service"           runlevel="xsystem" />
+        <service alias="" objectid="adft.ui.debugging"              interfaceid="iid.service"           runlevel="xsystem" />
+        <service alias="" objectid="adtf.ui.media_desc_editor"      interfaceid="iid.service"           runlevel="xsystem" />
+        <service alias="" objectid="adtf.ui.watchdog_gui"           interfaceid="iid.service"           runlevel="xsystem" />
+        <!--Extensions Editors Services -->
+        <service alias="" objectid="adtf.extensions_editors.eds_support_service"   interfaceid="iid.service"       runlevel="xsystem" />
+        <service alias="" objectid="adtf.extensions_editors.referenced_files_support_service"   interfaceid="iid.service"       runlevel="xsystem" />
+        
+        <!-- HTWK -->
+        <service alias="" objectid="htwk.world_service" interfaceid="htwk.i_world_service" runlevel="system"/>
+    </services>
+
+    <manifests>
+        <manifest optional="true" url="../../addons/*/bin/debug/*.manifest" />
+<!--         <manifest optional="false" url="../../src/examples/bin/debug/adtf_demo_extension_export_srv.manifest" /> -->
+<!--         <manifest optional="false" url="../../src/examples/bin/debug/adtf_demo_gps_export_srv.manifest" /> -->
+<!--         <manifest optional="false" url="../../src/examples/bin/debug/adtf_demo_oscilloscope_srv.manifest" /> -->
+<!--         <manifest optional="false" url="../../src/examples/bin/debug/adtf_demo_srv.manifest" /> -->
+<!--         <manifest optional="false" url="../../src/examples/bin/debug/adtf_demo_uiservice.manifest" /> -->
+<!--         <manifest optional="false" url="../../src/examples/bin/debug/adtf_demo_versioned_media_type_srv.manifest" /> -->
+<!--         <manifest optional="false" url="../../src/examples/bin/debug/adtf_user_sample_service.manifest" /> -->
+<!--         <manifest optional="false" url="../../src/examples/bin/debug/adtf_demo_srv_event.manifest" /> -->
+<!--         <manifest optional="false" url="../../src/examples/bin/debug/adtf_demo_filter_editor_srv.manifest" /> -->
+<!--         <manifest optional="false" url="../../src/examples/bin/debug/adtf_demo_extension_editor.manifest" /> -->
+    </manifests>
+
+</adtf:manifest>

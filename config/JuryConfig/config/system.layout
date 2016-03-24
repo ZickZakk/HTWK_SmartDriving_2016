@@ -1,0 +1,10 @@
+<adtf:export xmlns:adtf="adtf">
+	<layout name="Jury_Main_localhost">
+		<filter Docked="false" Floating="false" Fullscreen="false" Height="490" Maximized="false" Minimized="false" PosX="359" PosY="4" TopOfMain="false" Visible="true" Width="344" name="Jury_Config-AADC_Driver_Module" />
+		<filter Docked="false" Floating="false" Fullscreen="false" Height="627" Maximized="false" Minimized="false" PosX="0" PosY="0" TopOfMain="false" Visible="true" Width="318" name="Jury_Config-AADC_Jury_Module" />
+	</layout>
+	<layout name="Jury_Config">
+		<filter Docked="false" Floating="false" Fullscreen="false" Height="506" Maximized="false" Minimized="false" PosX="326" PosY="7" TopOfMain="false" Visible="true" Width="320" name="AADC_Driver_Module" />
+		<filter Docked="false" Floating="false" Fullscreen="false" Height="561" Maximized="false" Minimized="false" PosX="0" PosY="0" TopOfMain="false" Visible="true" Width="314" name="AADC_Jury_Module" />
+	</layout>
+</adtf:export>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<adtf:configuration xmlns:adtf="adtf">
+ <ce_layouts>
+  <configuration horizontal_scrollbar_value="1" name="Sender" show="true" tab_pos="0" vertical_scrollbar_value="1" zoomfactor="1.000000">
+   <component height="190" name="Receiver" width="192" x="421" y="32" />
+   <component height="170" name="Base_Config" width="261" x="32" y="32" />
+   <component height="74" name="HTWK_IMU_Outlier_Remover" width="189" x="749" y="210">
+    <input_pin name="raw_yaw" />
+    <output_pin name="adjusted_yaw" />
+   </component>
+   <component height="194" name="AADC_Converter_IMU" width="174" x="421" y="408">
+    <input_pin name="InerMeasUnit_Struct" />
+    <output_pin name="yaw" />
+    <output_pin name="pitch" />
+    <output_pin name="roll" />
+    <output_pin name="accX" />
+    <output_pin name="accY" />
+    <output_pin name="accZ" />
+   </component>
+   <component height="146" name="HTWK_Movement_Analyzer" width="242" x="749" y="32">
+    <input_pin name="car_speed" />
+    <input_pin name="AccX" />
+    <input_pin name="AccY" />
+    <input_pin name="distance_overall" />
+    <output_pin name="calc_car_speed" />
+    <output_pin name="calc_AccX" />
+    <output_pin name="calc_AccY" />
+    <output_pin name="calc_distance_overall" />
+   </component>
+   <component height="122" name="AADC_Converter_Wheels" width="256" x="421" y="254">
+    <input_pin name="WheelLeft_Struct" />
+    <input_pin name="WheelRight_Struct" />
+    <output_pin name="car_speed" />
+    <output_pin name="distance_lastSample" />
+    <output_pin name="distance_overall" />
+   </component>
+   <component height="98" name="Video_Display" width="172" x="1266" y="32">
+    <input_pin name="input" />
+    <input_pin name="gcl_input" />
+    <output_pin name="video_output" />
+   </component>
+   <component height="98" name="HTWK_Movement_Visualizer" width="187" x="1039" y="32">
+    <input_pin name="yawIn" />
+    <input_pin name="distanceIn" />
+    <output_pin name="VideoOut" />
+   </component>
+   <component height="146" name="Harddisk_Player" width="172" x="32" y="234">
+    <output_pin name="InerMeasUnit_Struct" />
+    <output_pin name="Voltage_SpeedCntrl" />
+    <output_pin name="WheelLeft_Struct" />
+    <output_pin name="WheelRight_Struct" />
+   </component>
+   <connection dest="HTWK_Movement_Visualizer" dest_pin="yawIn" reldiff="0" shape_type="4" source="HTWK_IMU_Outlier_Remover" source_pin="adjusted_yaw" x_p2="994" x_p3="994" x_p4="994" x_p5="994" y_p2="0" y_p3="74" y_p4="74" y_p5="0" />
+   <connection dest="HTWK_IMU_Outlier_Remover" dest_pin="raw_yaw" reldiff="0" shape_type="4" source="AADC_Converter_IMU" source_pin="yaw" x_p2="687" x_p3="687" x_p4="687" x_p5="687" y_p2="0" y_p3="252" y_p4="252" y_p5="0" />
+   <connection dest="HTWK_Movement_Analyzer" dest_pin="AccY" reldiff="0" shape_type="4" source="AADC_Converter_IMU" source_pin="accY" x_p2="683" x_p3="683" x_p4="683" x_p5="683" y_p2="0" y_p3="122" y_p4="122" y_p5="0" />
+   <connection dest="HTWK_Movement_Analyzer" dest_pin="AccX" reldiff="0" shape_type="4" source="AADC_Converter_IMU" source_pin="accX" x_p2="679" x_p3="679" x_p4="679" x_p5="679" y_p2="0" y_p3="98" y_p4="98" y_p5="0" />
+   <connection dest="AADC_Converter_IMU" dest_pin="InerMeasUnit_Struct" reldiff="0" shape_type="3" source="Base_Config" source_pin="InerMeasUnit_Struct" x_p2="313" x_p3="313" x_p4="313" x_p5="313" y_p2="0" y_p3="450" y_p4="450" y_p5="0" />
+   <connection dest="HTWK_Movement_Visualizer" dest_pin="distanceIn" reldiff="0" shape_type="4" source="HTWK_Movement_Analyzer" source_pin="calc_distance_overall" x_p2="1015" x_p3="1015" x_p4="1023" x_p5="1023" y_p2="0" y_p3="98" y_p4="98" y_p5="0" />
+   <connection dest="HTWK_Movement_Analyzer" dest_pin="distance_overall" reldiff="0" shape_type="4" source="AADC_Converter_Wheels" source_pin="distance_overall" x_p2="697" x_p3="697" x_p4="725" x_p5="725" y_p2="0" y_p3="146" y_p4="146" y_p5="0" />
+   <connection dest="HTWK_Movement_Analyzer" dest_pin="car_speed" reldiff="0" shape_type="4" source="AADC_Converter_Wheels" source_pin="car_speed" x_p2="689" x_p3="689" x_p4="689" x_p5="689" y_p2="0" y_p3="74" y_p4="74" y_p5="0" />
+   <connection dest="AADC_Converter_Wheels" dest_pin="WheelLeft_Struct" reldiff="0" shape_type="3" source="Base_Config" source_pin="WheelLeft_Struct" x_p2="305" x_p3="305" x_p4="305" x_p5="305" y_p2="0" y_p3="296" y_p4="296" y_p5="0" />
+   <connection dest="AADC_Converter_Wheels" dest_pin="WheelRight_Struct" reldiff="0" shape_type="3" source="Base_Config" source_pin="WheelRight_Struct" x_p2="309" x_p3="309" x_p4="309" x_p5="309" y_p2="0" y_p3="332" y_p4="332" y_p5="0" />
+   <connection dest="Video_Display" dest_pin="input" reldiff="0" shape_type="3" source="HTWK_Movement_Visualizer" source_pin="VideoOut" x_p2="1238" x_p3="1238" x_p4="1238" x_p5="1238" y_p2="0" y_p3="74" y_p4="74" y_p5="0" />
+   <connection dest="Receiver" dest_pin="WheelRight_Struct" reldiff="0" shape_type="4" source="Harddisk_Player" source_pin="WheelRight_Struct" x_p2="304" x_p3="304" x_p4="304" x_p5="304" y_p2="0" y_p3="150" y_p4="150" y_p5="0" />
+   <connection dest="Receiver" dest_pin="WheelLeft_Struct" reldiff="0" shape_type="4" source="Harddisk_Player" source_pin="WheelLeft_Struct" x_p2="300" x_p3="300" x_p4="300" x_p5="300" y_p2="0" y_p3="178" y_p4="178" y_p5="0" />
+   <connection dest="Receiver" dest_pin="Voltage_SpeedCntrl" reldiff="0" shape_type="4" source="Harddisk_Player" source_pin="Voltage_SpeedCntrl" x_p2="318" x_p3="318" x_p4="318" x_p5="318" y_p2="0" y_p3="122" y_p4="122" y_p5="0" />
+   <connection dest="Receiver" dest_pin="InerMeaUnit_Struct" reldiff="0" shape_type="4" source="Harddisk_Player" source_pin="InerMeasUnit_Struct" x_p2="296" x_p3="296" x_p4="296" x_p5="296" y_p2="0" y_p3="94" y_p4="94" y_p5="0" />
+   <connection dest="Receiver" dest_pin="Voltage_Measurement" reldiff="0" shape_type="3" source="Base_Config" source_pin="Voltage_Measurement" x_p2="321" x_p3="321" x_p4="321" x_p5="321" y_p2="0" y_p3="206" y_p4="206" y_p5="0" />
+   <connection dest="Receiver" dest_pin="Voltage_SpeedCntrl" reldiff="0" shape_type="4" source="Base_Config" source_pin="Voltage_SpeedCntrl" x_p2="317" x_p3="317" x_p4="317" x_p5="317" y_p2="0" y_p3="122" y_p4="122" y_p5="0" />
+   <connection dest="Receiver" dest_pin="InerMeaUnit_Struct" reldiff="0" shape_type="4" source="Base_Config" source_pin="InerMeasUnit_Struct" x_p2="313" x_p3="313" x_p4="313" x_p5="313" y_p2="0" y_p3="94" y_p4="94" y_p5="0" />
+   <connection dest="Receiver" dest_pin="WheelRight_Struct" reldiff="0" shape_type="3" source="Base_Config" source_pin="WheelRight_Struct" x_p2="309" x_p3="309" x_p4="309" x_p5="309" y_p2="0" y_p3="150" y_p4="150" y_p5="0" />
+   <connection dest="Receiver" dest_pin="WheelLeft_Struct" reldiff="0" shape_type="3" source="Base_Config" source_pin="WheelLeft_Struct" x_p2="305" x_p3="305" x_p4="305" x_p5="305" y_p2="0" y_p3="178" y_p4="178" y_p5="0" />
+  </configuration>
+  <configuration horizontal_scrollbar_value="1" name="Receiver" show="true" tab_pos="1" vertical_scrollbar_value="44" zoomfactor="1.000000">
+   <component height="46" name="rgb_video" width="75" x="50" y="100" />
+  </configuration>
+  <configuration horizontal_scrollbar_value="825" name="Base_Config" show="true" tab_pos="2" vertical_scrollbar_value="1" zoomfactor="1.000000">
+   <component height="46" name="Voltage_Measurement" width="148" x="1273" y="32" />
+   <component height="46" name="Voltage_SpeedCntrl" width="133" x="1273" y="344" />
+   <component height="46" name="InerMeasUnit_Struct" width="139" x="1273" y="266" />
+   <component height="46" name="WheelRight_Struct" width="129" x="1273" y="188" />
+   <component height="46" name="WheelLeft_Struct" width="120" x="1273" y="110" />
+   <component height="46" name="SteeringController" width="125" x="32" y="216" />
+   <component height="46" name="SpeedController" width="112" x="32" y="138" />
+   <component height="74" name="AADC_Watchdog_Trigger" width="172" x="32" y="32">
+    <output_pin name="WatchdogAliveSignal" />
+   </component>
+   <component height="74" name="AADC_Arduino_Communication4" width="215" x="609" y="350">
+    <input_pin name="COM_input" />
+    <output_pin name="COM_output" />
+   </component>
+   <component height="74" name="AADC_Arduino_Communication3" width="215" x="609" y="244">
+    <input_pin name="COM_input" />
+    <output_pin name="COM_output" />
+   </component>
+   <component height="74" name="AADC_Arduino_Communication2" width="215" x="609" y="138">
+    <input_pin name="COM_input" />
+    <output_pin name="COM_output" />
+   </component>
+   <component height="74" name="AADC_Arduino_Communication" width="207" x="609" y="32">
+    <input_pin name="COM_input" />
+    <output_pin name="COM_output" />
+   </component>
+   <component height="434" name="AADC_Arduino_Sensors" width="313" x="888" y="32">
+    <input_pin name="ArduinoCOM_input" />
+    <output_pin name="Ultrasonic_Front_Left" />
+    <output_pin name="Ultrasonic_Front_Center_Left" />
+    <output_pin name="Ultrasonic_Front_Center" />
+    <output_pin name="Ultrasonic_Front_Center_Right" />
+    <output_pin name="Ultrasonic_Front_Right" />
+    <output_pin name="Ultrasonic_Side_Left" />
+    <output_pin name="Ultrasonic_Side_Right" />
+    <output_pin name="Ultrasonic_Rear_Left" />
+    <output_pin name="Ultrasonic_Rear_Center" />
+    <output_pin name="Ultrasonic_Rear_Right" />
+    <output_pin name="Ultrasonic" />
+    <output_pin name="Voltage_Measurement" />
+    <output_pin name="Voltage_SpeedCntrl" />
+    <output_pin name="InerMeasUnit_Struct" />
+    <output_pin name="WheelLeft_Struct" />
+    <output_pin name="WheelRight_Struct" />
+   </component>
+   <component height="290" name="AADC_Arduino_Actuators" width="285" x="260" y="32">
+    <input_pin name="SpeedController" />
+    <input_pin name="SteeringController" />
+    <input_pin name="headLightEnabled" />
+    <input_pin name="turnSignalLeftEnabled" />
+    <input_pin name="turnSignalRightEnabled" />
+    <input_pin name="hazzardLightsEnabled" />
+    <input_pin name="brakeLightEnabled" />
+    <input_pin name="reverseLightsEnabled" />
+    <input_pin name="Watchdog_Alive_Flag" />
+    <input_pin name="Emergency_Stop" />
+    <output_pin name="ArduinoCOM_output" />
+   </component>
+   <connection dest="" dest_pin="Voltage_Measurement" reldiff="0" shape_type="4" source="AADC_Arduino_Sensors" source_pin="Voltage_Measurement" x_p2="1229" x_p3="1229" x_p4="1229" x_p5="1229" y_p2="0" y_p3="45" y_p4="45" y_p5="0" />
+   <connection dest="" dest_pin="Voltage_SpeedCntrl" reldiff="0" shape_type="4" source="AADC_Arduino_Sensors" source_pin="Voltage_SpeedCntrl" x_p2="1225" x_p3="1225" x_p4="1225" x_p5="1225" y_p2="0" y_p3="357" y_p4="357" y_p5="0" />
+   <connection dest="" dest_pin="InerMeasUnit_Struct" reldiff="0" shape_type="4" source="AADC_Arduino_Sensors" source_pin="InerMeasUnit_Struct" x_p2="1221" x_p3="1221" x_p4="1221" x_p5="1221" y_p2="0" y_p3="279" y_p4="279" y_p5="0" />
+   <connection dest="" dest_pin="WheelRight_Struct" reldiff="0" shape_type="4" source="AADC_Arduino_Sensors" source_pin="WheelRight_Struct" x_p2="1217" x_p3="1217" x_p4="1217" x_p5="1217" y_p2="0" y_p3="201" y_p4="201" y_p5="0" />
+   <connection dest="" dest_pin="WheelLeft_Struct" reldiff="0" shape_type="4" source="AADC_Arduino_Sensors" source_pin="WheelLeft_Struct" x_p2="1213" x_p3="1213" x_p4="1213" x_p5="1213" y_p2="0" y_p3="123" y_p4="123" y_p5="0" />
+   <connection dest="AADC_Arduino_Actuators" dest_pin="SteeringController" reldiff="0" shape_type="4" source="" source_pin="SteeringController" x_p2="205" x_p3="205" x_p4="205" x_p5="205" y_p2="0" y_p3="98" y_p4="98" y_p5="0" />
+   <connection dest="AADC_Arduino_Actuators" dest_pin="SpeedController" reldiff="0" shape_type="4" source="" source_pin="SpeedController" x_p2="221" x_p3="221" x_p4="221" x_p5="221" y_p2="0" y_p3="74" y_p4="74" y_p5="0" />
+   <connection dest="AADC_Arduino_Actuators" dest_pin="Watchdog_Alive_Flag" reldiff="0" shape_type="3" source="AADC_Watchdog_Trigger" source_pin="WatchdogAliveSignal" x_p2="216" x_p3="216" x_p4="216" x_p5="216" y_p2="0" y_p3="266" y_p4="266" y_p5="0" />
+   <connection dest="AADC_Arduino_Sensors" dest_pin="ArduinoCOM_input" reldiff="0" shape_type="4" source="AADC_Arduino_Communication4" source_pin="COM_output" x_p2="836" x_p3="836" x_p4="836" x_p5="836" y_p2="0" y_p3="74" y_p4="74" y_p5="0" />
+   <connection dest="AADC_Arduino_Sensors" dest_pin="ArduinoCOM_input" reldiff="0" shape_type="4" source="AADC_Arduino_Communication3" source_pin="COM_output" x_p2="836" x_p3="836" x_p4="836" x_p5="836" y_p2="0" y_p3="74" y_p4="74" y_p5="0" />
+   <connection dest="AADC_Arduino_Sensors" dest_pin="ArduinoCOM_input" reldiff="0" shape_type="4" source="AADC_Arduino_Communication2" source_pin="COM_output" x_p2="836" x_p3="836" x_p4="836" x_p5="836" y_p2="0" y_p3="74" y_p4="74" y_p5="0" />
+   <connection dest="AADC_Arduino_Sensors" dest_pin="ArduinoCOM_input" reldiff="0" shape_type="3" source="AADC_Arduino_Communication" source_pin="COM_output" x_p2="828" x_p3="828" x_p4="828" x_p5="828" y_p2="0" y_p3="74" y_p4="74" y_p5="0" />
+   <connection dest="AADC_Arduino_Communication4" dest_pin="COM_input" reldiff="0" shape_type="3" source="AADC_Arduino_Actuators" source_pin="ArduinoCOM_output" x_p2="557" x_p3="557" x_p4="557" x_p5="557" y_p2="0" y_p3="392" y_p4="392" y_p5="0" />
+   <connection dest="AADC_Arduino_Communication3" dest_pin="COM_input" reldiff="0" shape_type="3" source="AADC_Arduino_Actuators" source_pin="ArduinoCOM_output" x_p2="557" x_p3="557" x_p4="557" x_p5="557" y_p2="0" y_p3="286" y_p4="286" y_p5="0" />
+   <connection dest="AADC_Arduino_Communication2" dest_pin="COM_input" reldiff="0" shape_type="3" source="AADC_Arduino_Actuators" source_pin="ArduinoCOM_output" x_p2="557" x_p3="557" x_p4="557" x_p5="557" y_p2="0" y_p3="180" y_p4="180" y_p5="0" />
+   <connection dest="AADC_Arduino_Communication" dest_pin="COM_input" reldiff="0" shape_type="3" source="AADC_Arduino_Actuators" source_pin="ArduinoCOM_output" x_p2="557" x_p3="557" x_p4="557" x_p5="557" y_p2="0" y_p3="74" y_p4="74" y_p5="0" />
+  </configuration>
+ </ce_layouts>
+</adtf:configuration>

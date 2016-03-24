@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<adtf:project xmlns:adtf="adtf">
+ <general_settings>
+  <property name="active_configuration" type="String" value="NetIO_Client" />
+ </general_settings>
+ <configurations>
+  <configuration description="" name="NetIO_Server">
+   <graph>
+    <filter alias="Demo_MessageBus_NetIO_Filter" idref="adtf.example.demo_netio" priority="1">
+     <settings>
+      <property name="active" type="Bool" value="true" />
+     </settings>
+    </filter>
+   </graph>
+  </configuration>
+  <configuration description="" name="NetIO_Client">
+   <graph>
+    <filter alias="Demo_MessageBus_NetIO_Filter" idref="adtf.example.demo_netio" priority="1">
+     <settings>
+      <property name="is_server" type="Bool" value="false" />
+      <property name="server_url" type="String" value="udp://localhost:5555{forceclient=true}" />
+      <property name="active" type="Bool" value="true" />
+     </settings>
+    </filter>
+   </graph>
+  </configuration>
+ </configurations>
+ <fileinfo adtfversion="2.13.2" configversion="1.3" />
+ <configuration_settings />
+</adtf:project>
